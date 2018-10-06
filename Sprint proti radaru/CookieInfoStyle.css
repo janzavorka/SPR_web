@@ -1,0 +1,13 @@
+.fucking-eu-cookies.fucking-priority {
+	z-index: 2;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	box-sizing: border-box;
+        /*background-image:url("img/bckground_cookie.png");*/
+	background-color: rgba(128,128,128,0.5);
+        color:black;
+        font-family:verdana;
+        font-weight:bold;
+        font-size:110%;
+}

@@ -1,0 +1,38 @@
+Foto 2015
+
+2015_1 = Registrace
+2015_2 = Registrace
+2015_3 = Registrace
+2015_4 = Registrace
+2015_5 = Registrace
+2015_6 = Registrace
+2015_7 = Závodník Martin
+2015_8 = Závodník Vojtìch
+2015_9 = Závodnice
+2015_10 = Závodnice
+2015_11 = Bìžci vracející se na start
+2015_12 = Diváci a závodníci
+2015_13 = Diváci a závodníci
+2015_14 = Závodník
+2015_15 = Závodník Filip - návrat na start
+2015_16 = Organizaèní tým
+2015_17 = Organizaèní tým
+2015_18 = Organizaèní tým 
+2015_19 = Organizaèní tým 
+2015_20 = Vyhlášení dìti
+2015_21 = Vyhlášení dìti
+2015_22 = Vyhlášení dìti
+2015_23 = Vyhlášení - Jan Richtr 
+2015_24 = Vyhlášení - Jan Richtr
+2015_25 = Vyhlášení
+2015_26 = Vyhlášení  
+2015_27 = Lenka - vítìzka v kategorii žen
+2015_28 = Vyhlášení
+2015_29 = Jožo - vyhlášení
+2015_30 = Jožo - vyhlášení
+2015_31 = Martin - vyhlášení
+2015_32 = Skupinová foto: 1. øada zleva: Vít Plaèek, Jan Plaèek, Dominik Èapek, Jan Richtr, Jan Závorka, Filip Závorka, Martin Plaèek, Vojtìch Plaèek, Tomáš Plaèke, Anna Plaèková; 2. øada zleva: Patrik Mojžíš, Radek Závorka
+2015_33 = Skupinová foto: 1. øada zleva: Pavel Žemlík, Vít Plaèek, Jan Plaèek, Domonik Èapek, Jan Richtr, Jan Závorka, Filip Závorka, Martin Plaèke, Vojtìch Plaèek, Tomáš Plaèek, Anna Plaèková; 2. øada zleva: Patrik Mojžíš, Radek Závorka, Lenka, Jožo
+
+
+

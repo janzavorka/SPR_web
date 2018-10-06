@@ -1,0 +1,29 @@
+User-agent: * 		#Pro všechny roboty
+Disallow: /img/ 	#Zakáže indexaci všeho ve šložce img
+Disallow: /foto/    #Zakáže přístup do složky foto (aby se neindexovaly miniatury
+Disallow: /pictureComments/ #Zakáže indexování html souborů s komentáři k fotkám
+Allow: /foto/2014/  #Povolí přístup do jednotlivých složek s fotkama
+Allow: /foto/2015/
+Allow: /foto/2016/
+Allow: /foto/2017/
+
+# Ještě speciálně pro google 
+User-agent: Googlebot
+Disallow: /img/
+Disallow: /foto/    #Zakáže přístup do složky foto (aby se neindexovaly miniatury
+Disallow: /pictureComments/ #Zakáže indexování html souborů s komentáři k fotkám
+Allow: /foto/2014/  #Povolí přístup do jednotlivých složek s fotkama
+Allow: /foto/2015/
+Allow: /foto/2016/
+Allow: /foto/2017/
+
+# Ještě speciálně pro seznam
+User-agent: Seznambot
+Disallow: /img/
+Disallow: /foto/    #Zakáže přístup do složky foto (aby se neindexovaly miniatury
+Disallow: /pictureComments/ #Zakáže indexování html souborů s komentáři k fotkám
+Allow: /foto/2014/  #Povolí přístup do jednotlivých složek s fotkama
+Allow: /foto/2015/
+Allow: /foto/2016/
+Allow: /foto/2017/
+
