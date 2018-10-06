@@ -2,7 +2,7 @@
 All notable changes to this project will be documented in this file.
 
 ### xx.yy.zzz
-> Jan Závorka
+> ### Jan Závorka
 - vzor logu
 
 ### 29.06.2015
