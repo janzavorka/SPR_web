@@ -15,3 +15,7 @@ Webové stránky a vše potřebné kolem nich k závodu "Sprint proti radaru". J
 - Informativní lišta použitá na webových stránkách (javascript)
 - Obsahuje verze v nagličtině, češtině, slovenštině 
 - Autor a původ lišty: https://github.com/jakubboucek/fucking-eu-cookies
+
+### CHANGELOG.md
+- Obsahuje informace o změnách na webových stránkách
+- Podrobné informace v úkolníčku
