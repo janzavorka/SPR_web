@@ -18,7 +18,6 @@ All notable changes to this project will be documented in this file.
   - galerie lépe zobrazuje obrázky s vyšším rozlišením
   - pokudje zobrazena fotografie, která má komentář, jen komentář vepsán do atributu _alt_ (defaultně _alt_ nastavený na "Sprint proti radaru 20xx")
   - úprava tlačítka pro skrytí miniatur pro Firefox - definování velikosti apod. pro FF v .css souboru
-  - 
 - Pro všechny ročníky (2014, 2015, 2016, 2017) zkoprimovány miniatury pomocí 'Trimage image compressor' - velikost nižší o asi 60% (bez vizuálního rozdílu)
 ------------------------------------------------------------------
 ### 24.06.2018
