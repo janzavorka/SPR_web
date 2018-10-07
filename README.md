@@ -5,7 +5,7 @@ Webové stránky a vše potřebné kolem nich k závodu "Sprint proti radaru". J
 - Obsahuje aktuální podobu webových stránek
 
 ### Photos_Phatch 
-- Soubory pro úpravu  fotografií, které se nahrávají na web pomocí porgramu Phatch 
+- Soubory pro úpravu  fotografií, které se nahrávají na web, pomocí porgramu Phatch 
 
 ### Web under construction
 - Několik verzí informativních webových stránek pro případ, že by byla potřeba provést závažná údržba webu.
