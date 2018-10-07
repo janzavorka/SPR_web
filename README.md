@@ -20,5 +20,5 @@ Webové stránky a vše potřebné kolem nich k závodu "Sprint proti radaru". J
 - Obsahuje informace o změnách na webových stránkách
 - Podrobné informace v úkolníčku
 
-### UPLOADS.md
+### UPLOAD.md
 - Obsahuje informace a datum o uploadu stránek na hlavní server
