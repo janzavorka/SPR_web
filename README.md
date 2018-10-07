@@ -19,3 +19,6 @@ Webové stránky a vše potřebné kolem nich k závodu "Sprint proti radaru". J
 ### CHANGELOG.md
 - Obsahuje informace o změnách na webových stránkách
 - Podrobné informace v úkolníčku
+
+### UPLOADS.md
+- Obsahuje informace a datum o uploadu stránek na hlavní server
