@@ -12,7 +12,8 @@ All notable changes to this project will be documented in this file.
 - Opraven bug se špatným náhledem webu na Facebooku
 	- přidán meta ´<meta property="og:image" content="img/logo_FB.png">´
 	- nyní se zobrazuje logo se zeleným pozadí 
-- na hlavní stránce ´inde.html´ změna datumu na 30.6.2019
+- Na hlavní stránce ´inde.html´ změna datumu na 30.6.2019
+- Aktualizováno logo (požito, to co je na webu) v náhradních stránkách ve složce 'web under construction'
 ------------------------------------------------------------------
 ### 01.07.2018
 > Jan Závorka
