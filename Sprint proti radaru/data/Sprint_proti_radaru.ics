@@ -22,13 +22,18 @@ RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-DTSTAMP:20170920T130321Z
-UID:20170920T130321Z-918866803@marudot.com
-DTSTART;TZID="Europe/Berlin":20180701T123000
-DTEND;TZID="Europe/Berlin":20180701T160000
+DTSTAMP:20181008T145212Z
+UID:20181008T145212Z-1584834232@marudot.com
+DTSTART;TZID="Europe/Berlin":20190630T123000
+DTEND;TZID="Europe/Berlin":20190630T160000
 SUMMARY:Sprint proti radaru
 URL:www.sprintprotiradaru.cz
-DESCRIPTION:Krátký sprint proti stacionárnímu silničnímu radaru\, 5. ročník.\nVíce informací na www.sprintprotiradaru.cz\n 
+DESCRIPTION:Krátký sprint proti stacionárnímu silničnímu radaru\, 6. ročník.\nVíce informací na www.sprintprotiradaru.cz\n 
 LOCATION:Hotel Králíček\, Kacanovy 38\, Česká republika
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Sprint proti radaru
+TRIGGER:-P2D
+END:VALARM
 END:VEVENT
 END:VCALENDAR

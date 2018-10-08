@@ -2,6 +2,13 @@
 All notable changes to this project will be documented in this file.
 
 
+### 08.10.2018
+> Jan Závorka
+- Úprava stránek 'letos' a letos_informace' pro 6. ročník
+- Změna jmen souboru (aby se zobrazovaly všechyn informace, ne jen náhradní stránka) letos -> letos\_nahrada; letos\_infromace -> letos
+- Úprava v souboru 'stahnout' - oprava jména staženého letáku z "Sprint\_proti\_radaru-plakat" na "Sprint\_proti\_radaru-letak"
+- Příprava správného .ics souboru pro 6. ročník
+------------------------------------------------------------------
 ### 01.07.2018
 > Jan Závorka
 - Úprava všech odkazů na hotel Králíček na novou adresu www.hotel-kralicek.cz
