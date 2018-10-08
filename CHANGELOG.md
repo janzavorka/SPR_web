@@ -13,7 +13,7 @@ All notable changes to this project will be documented in this file.
 	- přidán meta ```<meta property="og:image" content="img/logo_FB.png">```
 	- nyní se zobrazuje logo se zeleným pozadí 
 - Na hlavní stránce 'index.html' změna datumu na 30.6.2019
-- Aktualizováno logo (požito, to co je na webu) v náhradních stránkách ve složce 'web under construction'
+- Aktualizováno logo (použito, to co je na webu) v náhradních stránkách ve složce 'web under construction'
 ------------------------------------------------------------------
 ### 01.07.2018
 > Jan Závorka
