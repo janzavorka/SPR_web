@@ -13,7 +13,7 @@ Webové stránky a vše potřebné kolem nich k závodu "Sprint proti radaru". J
 
 ### Cookie bar
 - Informativní lišta použitá na webových stránkách (javascript)
-- Obsahuje verze v nagličtině, češtině, slovenštině 
+- Obsahuje verze v angličtině, češtině, slovenštině 
 - Autor a původ lišty: https://github.com/jakubboucek/fucking-eu-cookies
 
 ### CHANGELOG.md
