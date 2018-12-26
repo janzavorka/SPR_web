@@ -1,7 +1,11 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
-
+### 26.12.2018
+> Jan Závorka
+- Úprava fotogalerie
+  - úprava cursoru na miniaturách na _pointer_
+------------------------------------------------------------------
 ### 08.10.2018
 > Jan Závorka
 - Úprava stránek 'letos' a letos_informace' pro 6. ročník
@@ -11,7 +15,7 @@ All notable changes to this project will be documented in this file.
 - Změna ikony stránky 'favico.ico', použit běžec z hlavičky - vypadá to lépe
 - Opraven bug se špatným náhledem webu na Facebooku
 	- přidán meta ```<meta property="og:image" content="img/logo_FB.png">```
-	- nyní se zobrazuje logo se zeleným pozadí 
+	- nyní se zobrazuje logo se zeleným pozadí
 - Na hlavní stránce 'index.html' změna datumu na 30.6.2019
 - Aktualizováno logo (použito, to co je na webu) v náhradních stránkách ve složce 'web under construction'
 ------------------------------------------------------------------
@@ -177,7 +181,7 @@ All notable changes to this project will be documented in this file.
 - K informacím přidána mapa konání závodu
 - Úprava odkazů: po najetí myší mění barvu/velikost, pomocí css
 ------------------------------------------------------------------
-### 26.06.2015 
+### 26.06.2015
 > Jan Závorka
 - Úprava v sekci partneři, odkaz na partnery se nyní otevírá v novém okně
 ------------------------------------------------------------------
