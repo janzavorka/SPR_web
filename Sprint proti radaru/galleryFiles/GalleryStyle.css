@@ -282,6 +282,14 @@ img.miniature-act{
 	float: center;
 }
 
+.imageErr{
+	position: absolute;
+	top: 44%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 2.5vh;
+}
+
 /*Special for Mozilla Firefox */
 @-moz-document url-prefix() {
 	.hideMinis { /*Positioning and resizing button for hiding miniatures, Firefox didn't display it correctly*/

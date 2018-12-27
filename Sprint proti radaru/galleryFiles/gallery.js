@@ -298,12 +298,11 @@ function imageError(image){
 	var srcText = decodeURI(image.src); //Function to replace special chars from URL and returning string
 	console.log(srcText);
 	if(srcText.endsWith(imageSuffix[imageSuffix.length-1])){ //If all were tried, replace with error text
-		//var imageNumber = ParseInt(image.Id.slice(7),10);
-		console.log(parseInt(image.id.slice(7), 10));
 		image.onerror = "";
 		image.alt = "Obrázek nebyl nalezen";
 		image.src = "img/image_error.png"; //img/image_error.png
-		document.getElementsByClassName("mySlides")[parseInt(image.id.slice(7), 10)-1].innerHTML += "<p>Omlouváme se, fotografie není k dispozici</p>";
+		//image.id.slice(7); is geting number of image from id (need for inserting error message to mySlides div)
+		document.getElementsByClassName("mySlides")[parseInt(image.id.slice(7), 10)-1].innerHTML += '<p class="imageErr">Omlouváme se, fotografie není k dispozici</p>';
 	}
 	else{ //Else try other specified
 		for(var i = 0; i < imageSuffix.length; i++){
