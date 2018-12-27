@@ -5,6 +5,9 @@ All notable changes to this project will be documented in this file.
 > Jan Závorka
 - Úprava fotogalerie
   - úprava cursoru na miniaturách na _pointer_
+  - změna _opacity_ při najetí na obrázek
+  - import komentářů k fotkám - správné zobrazení hlášky, když soubor nebyl nalezen (hláška se běžně nezobrazuje)
+  - přidání funkce pro zobrazování obrázků jiných formátů (.gif, .png), defaultně .jpg, poté se zkouší další vybrané koncovky, pak zobrazí chybu, že obrázek nebyl nalezen (využito _onerror_ u _<img>_)
 ------------------------------------------------------------------
 ### 08.10.2018
 > Jan Závorka
