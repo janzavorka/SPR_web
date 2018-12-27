@@ -61,10 +61,10 @@ li{
 	border-bottom: 5px solid #262626;
 }
 li a {
-    	display: block;
+  display: block;
 	color:#262626;
-   	padding: 22px 12px;
-    	text-decoration: none;
+  padding: 22px 12px;
+  text-decoration: none;
 	text-align: left;
 	font-family:verdana;
 	font-size:130%;
@@ -82,6 +82,27 @@ li a:hover {
 li a.active {
 	background-color: #bff442;
 	color: #262626;
+}
+
+/*Lists */
+ol {
+  display: block;
+  list-style-type: decimal;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 40px;
+}
+
+ol li{
+	border-bottom: 0px solid #262626;
+	color:#bff442;
+  padding: 0px 0px;
+  text-decoration: none;
+	text-align: left;
+	font-family:verdana;
+	font-size:100%;
 }
 /*========================================================================*/
 body {
@@ -135,7 +156,7 @@ body {
 	color:#bff442;
    	font-family:verdana;
     	font-size:100%;
-	text-decoration: underline;	
+	text-decoration: underline;
 	font-weight:normal;
 }
 .font-link:hover{
@@ -145,7 +166,7 @@ body {
 	color:#262626;
    	font-family:verdana;
     	font-size:100%;
-	text-decoration: underline;	
+	text-decoration: underline;
 	font-weight:bold;
 	line-height: 200%;
 }
@@ -153,7 +174,7 @@ body {
 	color:#f4fe00;
 }
 .font-highlight{
-	/*color:#2e8b57; Tmavě zelená*/ 
+	/*color:#2e8b57; Tmavě zelená*/
 	color:#f4fe00; /*Světle žlutá*/
 	/*color: #dbe400; /*Tmavě žlutá*/
 	font-weight:bold;
@@ -172,8 +193,3 @@ body {
 	line-height: 150%;
 }
 /*========================================================================*/
-
-
-        
-        
-        
