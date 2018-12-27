@@ -10,8 +10,8 @@ Name: Kamil Zavorka
 From: Chzech Republic
 
 /* SITE */
-Last update:2018/12/27
+Last update: 2018/12/27
 Site Url: http://www.sprintprotiradaru.cz
 Language: Czech
-IDE and tools: Atom, NetBeans, GIMP, Notepad, Trimage image compressor, Phatch PHoto
+Software: Atom, NetBeans, GIMP, Notepad, Trimage image compressor, Phatch PHoto
 Inspired by humanstxt.org
