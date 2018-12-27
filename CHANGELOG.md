@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 > Jan Závorka
 - Úprava fotogalerie
   - oprava hlášení, že obrázek nebyl nalezen (nyní správně uprostřed)
+- Návod na aktivaci JavaScriptu (```enable_javascript.html```)
+- Odkaz na návod v jednotlivých galeriích (pokud od nich uživatel vstoupí s vypnutým JS)
+- Úprava formátu číslovaných seznamů (v _Styles.css_)
+- Přidáno _humans.txt_ (dle http://humanstxt.org/)
+- Oprava formátování kódu u dalších stránek
+- Oprava souboru _robots.txt_
+- Přidání meta ```<meta name="robots" content="noindex"/>``` do stránek, které se nemají indexovat
 ------------------------------------------------------------------
 ### 26.12.2018
 > Jan Závorka
