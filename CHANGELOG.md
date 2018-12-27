@@ -1,6 +1,11 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+### 27.12.2018
+> Jan Závorka
+- Úprava fotogalerie
+  - oprava hlášení, že obrázek nebyl nalezen (nyní správně uprostřed)
+------------------------------------------------------------------
 ### 26.12.2018
 > Jan Závorka
 - Úprava fotogalerie
