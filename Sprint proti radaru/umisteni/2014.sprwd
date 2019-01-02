@@ -1,29 +1,29 @@
 %This is a simple database file used by sprintprotiradaru app. Please do not modify it.
 #time:1406804400
 #final:false
-#cat:D0+;Dìti mladší (0-8);Dìti mladší
-#cat:D9+;Dìti starší (9-15);Dìti starší
-#cat:M15+;Mui (15-34); Mui
-#cat:M35+;Veteráni (35 a více let); Veteráni
-#cat:Z15+;Dívky (15-34); Dívky
-#cat:Z35+;eny (35 a více let); eny
-%ID; jmeno; Prijmeni; oddil; kategorie; rychlost1; rychlost2; rychlost3; rychlost4; rychlost5; nejvyssiRychlost; poøadíVKategorii; CelkovéPoøadí
-1;Martin;Plaèek;;M15+;36;32;;;;36;4;5
-2;Jan;Závorka;;M15+;30;31;31;;;31;8;22
-3;Vít;Plaèek;;M35+;32;31;31;28;;32;5;16
-4;Radek;Závorka;;M35+;28;34;31;;;34;3;12
-5;Tomáš;Plaèek;;M35+;28;31;28;32;29;32;5;16
-6;Filip;Závorka;;M15+;34;32;34;35;37;37;2;2
-7;Anna;Plaèková;;Z15+;31;31;;;;31;2;22
-8;Magdalena;Hatašová;Janov nad Nisou;D9+;32;;;;;32;3;16
-9;Markéta;Hatašová;Janov nad Nisou;D9+;29;30;;;;30;6;24
-10;David;Hataš;ïár;D9+;32;28;;;;32;3;16
-11;Jan;Plaèek;Dìèín;M15+;35;38;38;30;35;38;1;1
-12;Maroš;Kandrík;;M15+;33;32;33;;;33;7;15
-13;Adam;Musil;Jílové;D9+;34;30;27;32;28;34;2;12
-14;Jakub;Musil;Jílové;D0+;26;26;22;25;28;28;3;29
-15;Dagmar;Musilová;Jílové;Z15+;31;32;33;35;;35;1;8
-16;Matìj;Musil;Liberec;D0+;25;26;24;26;28;28;3;29
+#cat:D0+;DÄ›ti mladÅ¡Ã­ (0-8);DÄ›ti mladÅ¡Ã­
+#cat:D9+;DÄ›ti starÅ¡Ã­ (9-15);DÄ›ti starÅ¡Ã­
+#cat:M15+;MuÅ¾i (15-34); MuÅ¾i
+#cat:M35+;VeterÃ¡ni (35 a vÃ­ce let); VeterÃ¡ni
+#cat:Z15+;DÃ­vky (15-34); DÃ­vky
+#cat:Z35+;Å½eny (35 a vÃ­ce let); Å½eny
+%ID; jmeno; Prijmeni; oddil; kategorie; rychlost1; rychlost2; rychlost3; rychlost4; rychlost5; nejvyssiRychlost; poÅ™adÃ­VKategorii; CelkovÃ©PoÅ™adÃ­
+1;Martin;PlaÄek;;M15+;36;32;;;;36;4;5
+2;Jan;ZÃ¡vorka;;M15+;30;31;31;;;31;8;22
+3;VÃ­t;PlaÄek;;M35+;32;31;31;28;;32;5;16
+4;Radek;ZÃ¡vorka;;M35+;28;34;31;;;34;3;12
+5;TomÃ¡Å¡;PlaÄek;;M35+;28;31;28;32;29;32;5;16
+6;Filip;ZÃ¡vorka;;M15+;34;32;34;35;37;37;2;2
+7;Anna;PlaÄkovÃ¡;;Z15+;31;31;;;;31;2;22
+8;Magdalena;HataÅ¡ovÃ¡;Janov nad Nisou;D9+;32;;;;;32;3;16
+9;MarkÃ©ta;HataÅ¡ovÃ¡;Janov nad Nisou;D9+;29;30;;;;30;6;24
+10;David;HataÅ¡;Å½ÄÃ¡r;D9+;32;28;;;;32;3;16
+11;Jan;PlaÄek;DÄ›ÄÃ­n;M15+;35;38;38;30;35;38;1;1
+12;MaroÅ¡;KandrÃ­k;;M15+;33;32;33;;;33;7;15
+13;Adam;Musil;JÃ­lovÃ©;D9+;34;30;27;32;28;34;2;12
+14;Jakub;Musil;JÃ­lovÃ©;D0+;26;26;22;25;28;28;3;29
+15;Dagmar;MusilovÃ¡;JÃ­lovÃ©;Z15+;31;32;33;35;;35;1;8
+16;MatÄ›j;Musil;Liberec;D0+;25;26;24;26;28;28;3;29
 17;Petr;Musil;Liberec;M15+;36;37;;;;37;2;2
-18;Vanessa;Richtrová;Králíèek;D9+;29;26;27;;;29;7;25
-19;Ondøej;Šafáø;Králíèek;D9+;36;29;;;;36;1;5
+18;Vanessa;RichtrovÃ¡;KrÃ¡lÃ­Äek;D9+;29;26;27;;;29;7;25
+19;OndÅ™ej;Å afÃ¡Å™;KrÃ¡lÃ­Äek;D9+;36;29;;;;36;1;5
