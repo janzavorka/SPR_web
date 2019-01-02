@@ -1,6 +1,10 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+### 02.01.2019
+> Jan Závorka
+- Přidáno 2014.sprwd testovací databáze pro prezentaci výsledků na webu
+------------------------------------------------------------------
 ### 27.12.2018
 > Jan Závorka
 - Úprava fotogalerie
