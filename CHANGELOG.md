@@ -1,6 +1,10 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+### 02.01.2019
+> Jan Závorka
+- Pøidána testovací databáze 2014.sprwd s výsledky závodù
+------------------------------------------------------------------
 ### 27.12.2018
 > Jan ZÃ¡vorka
 - Ãšprava fotogalerie
