@@ -2,230 +2,230 @@
 All notable changes to this project will be documented in this file.
 
 ### 02.01.2019
-> Jan Z�vorka
-- P�id�na testovac� datab�ze 2014.sprwd s v�sledky z�vod�
+> Jan Závorka
+- Přidána testovací databáze 2014.sprwd s výsledky závodu
 ------------------------------------------------------------------
 ### 27.12.2018
-> Jan Závorka
-- Úprava fotogalerie
-  - oprava hlášení, že obrázek nebyl nalezen (nyní správně uprostřed)
-- Návod na aktivaci JavaScriptu (```enable_javascript.html```)
-- Odkaz na návod v jednotlivých galeriích (pokud od nich uživatel vstoupí s vypnutým JS)
-- Úprava formátu číslovaných seznamů (v _Styles.css_)
-- Přidáno _humans.txt_ (dle http://humanstxt.org/)
-- Oprava formátování kódu u dalších stránek
+> Jan ZĂˇvorka
+- Ăšprava fotogalerie
+  - oprava hlĂˇĹˇenĂ­, Ĺľe obrĂˇzek nebyl nalezen (nynĂ­ sprĂˇvnÄ› uprostĹ™ed)
+- NĂˇvod na aktivaci JavaScriptu (```enable_javascript.html```)
+- Odkaz na nĂˇvod v jednotlivĂ˝ch galeriĂ­ch (pokud od nich uĹľivatel vstoupĂ­ s vypnutĂ˝m JS)
+- Ăšprava formĂˇtu ÄŤĂ­slovanĂ˝ch seznamĹŻ (v _Styles.css_)
+- PĹ™idĂˇno _humans.txt_ (dle http://humanstxt.org/)
+- Oprava formĂˇtovĂˇnĂ­ kĂłdu u dalĹˇĂ­ch strĂˇnek
 - Oprava souboru _robots.txt_
-- Přidání meta ```<meta name="robots" content="noindex"/>``` do stránek, které se nemají indexovat
+- PĹ™idĂˇnĂ­ meta ```<meta name="robots" content="noindex"/>``` do strĂˇnek, kterĂ© se nemajĂ­ indexovat
 ------------------------------------------------------------------
 ### 26.12.2018
-> Jan Závorka
-- Úprava fotogalerie
-  - úprava cursoru na miniaturách na _pointer_
-  - změna _opacity_ při najetí na obrázek
-  - import komentářů k fotkám - správné zobrazení hlášky, když soubor nebyl nalezen (hláška se běžně nezobrazuje)
-  - přidání funkce pro zobrazování obrázků jiných formátů (.gif, .png), defaultně .jpg, poté se zkouší další vybrané koncovky, pak zobrazí chybu, že obrázek nebyl nalezen (využito _onerror_ u _<img>_)
+> Jan ZĂˇvorka
+- Ăšprava fotogalerie
+  - Ăşprava cursoru na miniaturĂˇch na _pointer_
+  - zmÄ›na _opacity_ pĹ™i najetĂ­ na obrĂˇzek
+  - import komentĂˇĹ™ĹŻ k fotkĂˇm - sprĂˇvnĂ© zobrazenĂ­ hlĂˇĹˇky, kdyĹľ soubor nebyl nalezen (hlĂˇĹˇka se bÄ›ĹľnÄ› nezobrazuje)
+  - pĹ™idĂˇnĂ­ funkce pro zobrazovĂˇnĂ­ obrĂˇzkĹŻ jinĂ˝ch formĂˇtĹŻ (.gif, .png), defaultnÄ› .jpg, potĂ© se zkouĹˇĂ­ dalĹˇĂ­ vybranĂ© koncovky, pak zobrazĂ­ chybu, Ĺľe obrĂˇzek nebyl nalezen (vyuĹľito _onerror_ u _<img>_)
 ------------------------------------------------------------------
 ### 08.10.2018
-> Jan Závorka
-- Úprava stránek 'letos' a letos_informace' pro 6. ročník
-- Změna jmen souboru (aby se zobrazovaly všechyn informace, ne jen náhradní stránka) letos -> letos\_nahrada; letos\_infromace -> letos
-- Úprava v souboru 'stahnout' - oprava jména staženého letáku z "Sprint\_proti\_radaru-plakat" na "Sprint\_proti\_radaru-letak"
-- Příprava správného .ics souboru pro 6. ročník
-- Změna ikony stránky 'favico.ico', použit běžec z hlavičky - vypadá to lépe
-- Opraven bug se špatným náhledem webu na Facebooku
-	- přidán meta ```<meta property="og:image" content="img/logo_FB.png">```
-	- nyní se zobrazuje logo se zeleným pozadí
-- Na hlavní stránce 'index.html' změna datumu na 30.6.2019
-- Aktualizováno logo (použito, to co je na webu) v náhradních stránkách ve složce 'web under construction'
+> Jan ZĂˇvorka
+- Ăšprava strĂˇnek 'letos' a letos_informace' pro 6. roÄŤnĂ­k
+- ZmÄ›na jmen souboru (aby se zobrazovaly vĹˇechyn informace, ne jen nĂˇhradnĂ­ strĂˇnka) letos -> letos\_nahrada; letos\_infromace -> letos
+- Ăšprava v souboru 'stahnout' - oprava jmĂ©na staĹľenĂ©ho letĂˇku z "Sprint\_proti\_radaru-plakat" na "Sprint\_proti\_radaru-letak"
+- PĹ™Ă­prava sprĂˇvnĂ©ho .ics souboru pro 6. roÄŤnĂ­k
+- ZmÄ›na ikony strĂˇnky 'favico.ico', pouĹľit bÄ›Ĺľec z hlaviÄŤky - vypadĂˇ to lĂ©pe
+- Opraven bug se ĹˇpatnĂ˝m nĂˇhledem webu na Facebooku
+	- pĹ™idĂˇn meta ```<meta property="og:image" content="img/logo_FB.png">```
+	- nynĂ­ se zobrazuje logo se zelenĂ˝m pozadĂ­
+- Na hlavnĂ­ strĂˇnce 'index.html' zmÄ›na datumu na 30.6.2019
+- AktualizovĂˇno logo (pouĹľito, to co je na webu) v nĂˇhradnĂ­ch strĂˇnkĂˇch ve sloĹľce 'web under construction'
 ------------------------------------------------------------------
 ### 01.07.2018
-> Jan Závorka
-- Úprava všech odkazů na hotel Králíček na novou adresu www.hotel-kralicek.cz
-- Nahrání materiálnů z 5. ročníku (2018):
+> Jan ZĂˇvorka
+- Ăšprava vĹˇech odkazĹŻ na hotel KrĂˇlĂ­ÄŤek na novou adresu www.hotel-kralicek.cz
+- NahrĂˇnĂ­ materiĂˇlnĹŻ z 5. roÄŤnĂ­ku (2018):
   - fotografie
-  - výsledková listina
-  - úprava stránek: umisteni, index, galerie, letos
+  - vĂ˝sledkovĂˇ listina
+  - Ăşprava strĂˇnek: umisteni, index, galerie, letos
 ------------------------------------------------------------------
 ### 29.06.2018
-> Jan Závorka
-- Úprava fotogalerie:
-  - lepší pozicování šipek pro změnu miniatur
-  - počet miniatur se řídí šířkou stránky
-  - galerie lépe zobrazuje obrázky s vyšším rozlišením
-  - pokudje zobrazena fotografie, která má komentář, jen komentář vepsán do atributu _alt_ (defaultně _alt_ nastavený na "Sprint proti radaru 20xx")
-  - úprava tlačítka pro skrytí miniatur pro Firefox - definování velikosti apod. pro FF v .css souboru
-- Pro všechny ročníky (2014, 2015, 2016, 2017) zkoprimovány miniatury pomocí 'Trimage image compressor' - velikost nižší o asi 60% (bez vizuálního rozdílu)
+> Jan ZĂˇvorka
+- Ăšprava fotogalerie:
+  - lepĹˇĂ­ pozicovĂˇnĂ­ Ĺˇipek pro zmÄ›nu miniatur
+  - poÄŤet miniatur se Ĺ™Ă­dĂ­ ĹˇĂ­Ĺ™kou strĂˇnky
+  - galerie lĂ©pe zobrazuje obrĂˇzky s vyĹˇĹˇĂ­m rozliĹˇenĂ­m
+  - pokudje zobrazena fotografie, kterĂˇ mĂˇ komentĂˇĹ™, jen komentĂˇĹ™ vepsĂˇn do atributu _alt_ (defaultnÄ› _alt_ nastavenĂ˝ na "Sprint proti radaru 20xx")
+  - Ăşprava tlaÄŤĂ­tka pro skrytĂ­ miniatur pro Firefox - definovĂˇnĂ­ velikosti apod. pro FF v .css souboru
+- Pro vĹˇechny roÄŤnĂ­ky (2014, 2015, 2016, 2017) zkoprimovĂˇny miniatury pomocĂ­ 'Trimage image compressor' - velikost niĹľĹˇĂ­ o asi 60% (bez vizuĂˇlnĂ­ho rozdĂ­lu)
 ------------------------------------------------------------------
 ### 24.06.2018
-> Jan Závorka
-- Oprava popisů a nadpisů stránek s popisy obrázků pro galerii
-- Pomocí meta zakázáno indexovat stránky "poodeslanifail.html" a "poodeslaniok.html"
-- Oprava velikosti ikony pro skrytí miniatur v galerii (globálně)
+> Jan ZĂˇvorka
+- Oprava popisĹŻ a nadpisĹŻ strĂˇnek s popisy obrĂˇzkĹŻ pro galerii
+- PomocĂ­ meta zakĂˇzĂˇno indexovat strĂˇnky "poodeslanifail.html" a "poodeslaniok.html"
+- Oprava velikosti ikony pro skrytĂ­ miniatur v galerii (globĂˇlnÄ›)
 ------------------------------------------------------------------
 ### 23.06.2018
-> Jan Závorka
-- Opraven popis stránky "konkatky.html"
-- V galeriích async načítání scriptu pro klávesové zkratky
+> Jan ZĂˇvorka
+- Opraven popis strĂˇnky "konkatky.html"
+- V galeriĂ­ch async naÄŤĂ­tĂˇnĂ­ scriptu pro klĂˇvesovĂ© zkratky
 ------------------------------------------------------------------
 ### 17.06.2018
-> Jan Závorka
-- Oprava stahování fotek pomocí tlačítka v galerii, nyní se již správně přidává přípona *.jpg
+> Jan ZĂˇvorka
+- Oprava stahovĂˇnĂ­ fotek pomocĂ­ tlaÄŤĂ­tka v galerii, nynĂ­ se jiĹľ sprĂˇvnÄ› pĹ™idĂˇvĂˇ pĹ™Ă­pona *.jpg
 ------------------------------------------------------------------
 ### 01.06.2018
-> Jan Závorka
-- Úprava cookie lišty, nyní se nahrává ze souboru přímo na serveru ('CookieCZ.js'), autor lišty vývoj ukončil
+> Jan ZĂˇvorka
+- Ăšprava cookie liĹˇty, nynĂ­ se nahrĂˇvĂˇ ze souboru pĹ™Ă­mo na serveru ('CookieCZ.js'), autor liĹˇty vĂ˝voj ukonÄŤil
 ------------------------------------------------------------------
 ### 27.05.2018
-> Jan Závorka
-- Přidání klávesy 'escape' k zavření galerie
-- Nahrány aktuální verze plakátu a letáku
+> Jan ZĂˇvorka
+- PĹ™idĂˇnĂ­ klĂˇvesy 'escape' k zavĹ™enĂ­ galerie
+- NahrĂˇny aktuĂˇlnĂ­ verze plakĂˇtu a letĂˇku
 ------------------------------------------------------------------
 ### 09.05.2018
-> Jan Závorka
-- Nahrána nová, zrekonstruovaná verze webu ze subdomény "test1" na hlavní doménu (autor Martin Plaček)
-- Nahrána aktualizovaná fotogalerie
+> Jan ZĂˇvorka
+- NahrĂˇna novĂˇ, zrekonstruovanĂˇ verze webu ze subdomĂ©ny "test1" na hlavnĂ­ domĂ©nu (autor Martin PlaÄŤek)
+- NahrĂˇna aktualizovanĂˇ fotogalerie
 ------------------------------------------------------------------
 ### 02.04.2018
-> Martin Plaček
+> Martin PlaÄŤek
 - Alternativni verze webu na subdomene test1
-- Kompletní rekonstrukce webu
+- KompletnĂ­ rekonstrukce webu
 ------------------------------------------------------------------
 ### 29.03.2018
-> Jan Závorka
-- Změna kódovaní celého webu z windows-1250 na utf-8
-- Úprava souboru robots.txt desktop. verze: nyní prohledává obrázky galerie
-- Desktopová verze: přidání skriptu pro posun fotografií v galerii pomocí šipek (foto_posun.js)
+> Jan ZĂˇvorka
+- ZmÄ›na kĂłdovanĂ­ celĂ©ho webu z windows-1250 na utf-8
+- Ăšprava souboru robots.txt desktop. verze: nynĂ­ prohledĂˇvĂˇ obrĂˇzky galerie
+- DesktopovĂˇ verze: pĹ™idĂˇnĂ­ skriptu pro posun fotografiĂ­ v galerii pomocĂ­ Ĺˇipek (foto_posun.js)
 ------------------------------------------------------------------
 ### 28.03.2018
-> Jan Závorka
-- Kontrola a úprava chybně otočených obrázků v galerii
+> Jan ZĂˇvorka
+- Kontrola a Ăşprava chybnÄ› otoÄŤenĂ˝ch obrĂˇzkĹŻ v galerii
 ------------------------------------------------------------------
 ### 27.03.2018
-> Jan Závorka
-- Opraveno na stránce LETOS (mobilní verze) slovo prezentace na prezence
-- Přidán soubor robots.txt (zabrání indexování obrázků ve složce img)
-- Zakázaní indexování pomocí meta pro sránky 'po odeslání' mobilní i desktopová verze
-- Zákaz indexování mobilní verze + přidaný skript na každou stránku v menu, který přesměruje uživatele na mobilní verzi
-- Opravena chyba v názvu stahovaného .ics souboru (nyní již správně v názvu rok 2018) pro obě verze
+> Jan ZĂˇvorka
+- Opraveno na strĂˇnce LETOS (mobilnĂ­ verze) slovo prezentace na prezence
+- PĹ™idĂˇn soubor robots.txt (zabrĂˇnĂ­ indexovĂˇnĂ­ obrĂˇzkĹŻ ve sloĹľce img)
+- ZakĂˇzanĂ­ indexovĂˇnĂ­ pomocĂ­ meta pro srĂˇnky 'po odeslĂˇnĂ­' mobilnĂ­ i desktopovĂˇ verze
+- ZĂˇkaz indexovĂˇnĂ­ mobilnĂ­ verze + pĹ™idanĂ˝ skript na kaĹľdou strĂˇnku v menu, kterĂ˝ pĹ™esmÄ›ruje uĹľivatele na mobilnĂ­ verzi
+- Opravena chyba v nĂˇzvu stahovanĂ©ho .ics souboru (nynĂ­ jiĹľ sprĂˇvnÄ› v nĂˇzvu rok 2018) pro obÄ› verze
 ------------------------------------------------------------------
 ### 25.03.2018
-> Jan Závorka
-- Přidána informační lišta o cookies (web používá cookies) pro desktopovou i mobilní verzi
-- Na stránku letos přidáno tlačítko ke stažení souboru .ics (kalendář) desktopová i mobilní verze
+> Jan ZĂˇvorka
+- PĹ™idĂˇna informaÄŤnĂ­ liĹˇta o cookies (web pouĹľĂ­vĂˇ cookies) pro desktopovou i mobilnĂ­ verzi
+- Na strĂˇnku letos pĹ™idĂˇno tlaÄŤĂ­tko ke staĹľenĂ­ souboru .ics (kalendĂˇĹ™) desktopovĂˇ i mobilnĂ­ verze
 ------------------------------------------------------------------
 ### 17.09.2017
-> Jan Závorka
-- Nahrány informace pro 5. ročník (mobilní i desktopová verze)
-- Aktualyzován plakát a leták
+> Jan ZĂˇvorka
+- NahrĂˇny informace pro 5. roÄŤnĂ­k (mobilnĂ­ i desktopovĂˇ verze)
+- AktualyzovĂˇn plakĂˇt a letĂˇk
 ------------------------------------------------------------------
 ### 08.07.2017
-> Jan Závorka
-- Úprava zdrojáků a zprovoznění analýzy návštěvnosti pomocí google analytics a toplist.cz
+> Jan ZĂˇvorka
+- Ăšprava zdrojĂˇkĹŻ a zprovoznÄ›nĂ­ analĂ˝zy nĂˇvĹˇtÄ›vnosti pomocĂ­ google analytics a toplist.cz
 ------------------------------------------------------------------
 ### 02.07.2017
-> Jan Závorka
-- Náhraní výsledků a fotek z letošního ročníku (2017)
+> Jan ZĂˇvorka
+- NĂˇhranĂ­ vĂ˝sledkĹŻ a fotek z letoĹˇnĂ­ho roÄŤnĂ­ku (2017)
 ------------------------------------------------------------------
 ### 01.07.2017
-> Jan Závorka
-- Úprav stránek galerie z každého ročníku (pouze úprava kódu)
+> Jan ZĂˇvorka
+- Ăšprav strĂˇnek galerie z kaĹľdĂ©ho roÄŤnĂ­ku (pouze Ăşprava kĂłdu)
 ------------------------------------------------------------------
 ### 29.03.2017
-> Jan Závorka
-- Opraveno tlačítko s tiskárnou pro zobrazení Letáku (špatně nahraný soubor Styles.css)
+> Jan ZĂˇvorka
+- Opraveno tlaÄŤĂ­tko s tiskĂˇrnou pro zobrazenĂ­ LetĂˇku (ĹˇpatnÄ› nahranĂ˝ soubor Styles.css)
 ------------------------------------------------------------------
 ### 28.03.2017
-> Jan Závorka
-- Upraveny informace o rozdělování cen
-- Přidán leták (na desktopu dostupný přes tlačítko s tiskárnou, na mobilní verzi odkaz)
+> Jan ZĂˇvorka
+- Upraveny informace o rozdÄ›lovĂˇnĂ­ cen
+- PĹ™idĂˇn letĂˇk (na desktopu dostupnĂ˝ pĹ™es tlaÄŤĂ­tko s tiskĂˇrnou, na mobilnĂ­ verzi odkaz)
 ------------------------------------------------------------------
 ### 16.03.2017
-> Jan Závorka
-- Upraven čas konce a startu závodu (plakát a info na webu)
+> Jan ZĂˇvorka
+- Upraven ÄŤas konce a startu zĂˇvodu (plakĂˇt a info na webu)
 ------------------------------------------------------------------
 ### 09.07.2016
-> Jan Závorka
-- Narány fotografie pro desktop
-- Úprava souborů s foto_2016.html
+> Jan ZĂˇvorka
+- NarĂˇny fotografie pro desktop
+- Ăšprava souborĹŻ s foto_2016.html
 ------------------------------------------------------------------
 ### 03.07.2016
-- Nahrány výsledky a fotografie + miniatury (foto pouze pro mobilní verzi, desktopová přesměrována na mob.)
-- Aktualizace souborů spojených s nahráním fotografií a výsledků
+- NahrĂˇny vĂ˝sledky a fotografie + miniatury (foto pouze pro mobilnĂ­ verzi, desktopovĂˇ pĹ™esmÄ›rovĂˇna na mob.)
+- Aktualizace souborĹŻ spojenĂ˝ch s nahrĂˇnĂ­m fotografiĂ­ a vĂ˝sledkĹŻ
 ------------------------------------------------------------------
 ### 25.05.2016
-> Jan Závorka
-- Komprese obrázku pozadí a úvodní fotky
+> Jan ZĂˇvorka
+- Komprese obrĂˇzku pozadĂ­ a ĂşvodnĂ­ fotky
 ------------------------------------------------------------------
 ### 24.05.2016
-> Jan Závorka
-- Úprava mobilní verze webu (odebrán pravý sloupec, místo něho další záložka)
-- Úprava chyb webu (zobrazování), přidán odkaz ke stažení plakátu
-- Úprava mobilní verze, zvětšeny tlačítka v menu, úprava textu,odkazů
-- Přidán znak Kacanov v záležce Partneři v mobilní verzi
-- Mobilní verze: úprava tlačítek v galeriích
-- Desktopová verze: znak obce Kacanovy, úprava vzhledu, úprava menu
-- Úprava tlačítek ve fotogalerii: načítání z Styles.css
+> Jan ZĂˇvorka
+- Ăšprava mobilnĂ­ verze webu (odebrĂˇn pravĂ˝ sloupec, mĂ­sto nÄ›ho dalĹˇĂ­ zĂˇloĹľka)
+- Ăšprava chyb webu (zobrazovĂˇnĂ­), pĹ™idĂˇn odkaz ke staĹľenĂ­ plakĂˇtu
+- Ăšprava mobilnĂ­ verze, zvÄ›tĹˇeny tlaÄŤĂ­tka v menu, Ăşprava textu,odkazĹŻ
+- PĹ™idĂˇn znak Kacanov v zĂˇleĹľce PartneĹ™i v mobilnĂ­ verzi
+- MobilnĂ­ verze: Ăşprava tlaÄŤĂ­tek v galeriĂ­ch
+- DesktopovĂˇ verze: znak obce Kacanovy, Ăşprava vzhledu, Ăşprava menu
+- Ăšprava tlaÄŤĂ­tek ve fotogalerii: naÄŤĂ­tĂˇnĂ­ z Styles.css
 - Opravena fotka 2015_33
 ------------------------------------------------------------------
 ### 04.10.2015
-> Jan Závorka
-- Přidány inforormace o aktuálním (3.ročnku)
+> Jan ZĂˇvorka
+- PĹ™idĂˇny inforormace o aktuĂˇlnĂ­m (3.roÄŤnku)
 ------------------------------------------------------------------
 ### 18.07.2015
-> Jan Závorka
-- Úprava vkládání partnerů: partneri.js, vložení do dokumentu pomocí scriptu (jen desktopová verze)
+> Jan ZĂˇvorka
+- Ăšprava vklĂˇdĂˇnĂ­ partnerĹŻ: partneri.js, vloĹľenĂ­ do dokumentu pomocĂ­ scriptu (jen desktopovĂˇ verze)
 ------------------------------------------------------------------
 ### 14.07.2015
-> Jan Závorka
-- Nahrány fotografie 2015
-- Přidána galerie 2015
+> Jan ZĂˇvorka
+- NahrĂˇny fotografie 2015
+- PĹ™idĂˇna galerie 2015
 ------------------------------------------------------------------
 ### 12.07.2015
-> Jan Závorka
-- Nahrána skutečná výsledková listina 2015
-- Přidána favicon
+> Jan ZĂˇvorka
+- NahrĂˇna skuteÄŤnĂˇ vĂ˝sledkovĂˇ listina 2015
+- PĹ™idĂˇna favicon
 ------------------------------------------------------------------
 ### 11.07.2015
-> Jan Závorka
-- Změna úvodního textu a informací (letošní rořník)
-- Přidání výsledků a gelerie pro rok 2015 (náhradní)
-- Přidán soubor pro ověření od Google
+> Jan ZĂˇvorka
+- ZmÄ›na ĂşvodnĂ­ho textu a informacĂ­ (letoĹˇnĂ­ roĹ™nĂ­k)
+- PĹ™idĂˇnĂ­ vĂ˝sledkĹŻ a gelerie pro rok 2015 (nĂˇhradnĂ­)
+- PĹ™idĂˇn soubor pro ovÄ›Ĺ™enĂ­ od Google
 ------------------------------------------------------------------
 ### 29.06.2015
-> Jan Závorka
-- Přidání souboru styles.css: změna barvy tlačítka po najetí myší
+> Jan ZĂˇvorka
+- PĹ™idĂˇnĂ­ souboru styles.css: zmÄ›na barvy tlaÄŤĂ­tka po najetĂ­ myĹˇĂ­
 ------------------------------------------------------------------
 ### 28.06.2015
-> Jan Závorka
-- K informacím přidána mapa konání závodu
-- Úprava odkazů: po najetí myší mění barvu/velikost, pomocí css
+> Jan ZĂˇvorka
+- K informacĂ­m pĹ™idĂˇna mapa konĂˇnĂ­ zĂˇvodu
+- Ăšprava odkazĹŻ: po najetĂ­ myĹˇĂ­ mÄ›nĂ­ barvu/velikost, pomocĂ­ css
 ------------------------------------------------------------------
 ### 26.06.2015
-> Jan Závorka
-- Úprava v sekci partneři, odkaz na partnery se nyní otevírá v novém okně
+> Jan ZĂˇvorka
+- Ăšprava v sekci partneĹ™i, odkaz na partnery se nynĂ­ otevĂ­rĂˇ v novĂ©m oknÄ›
 ------------------------------------------------------------------
 ### 24.06.2015
-> Kamil Závorka
-- Přidání popisků k fotkám
+> Kamil ZĂˇvorka
+- PĹ™idĂˇnĂ­ popiskĹŻ k fotkĂˇm
 ------------------------------------------------------------------
 ### 23.06.2015
-> Kamil Závorka
-- Upraven pravý sloupec s obsahem partneři(sloupec je po celé délce)
-- Změna fotek v galerii dle pokynů V. Plačka
+> Kamil ZĂˇvorka
+- Upraven pravĂ˝ sloupec s obsahem partneĹ™i(sloupec je po celĂ© dĂ©lce)
+- ZmÄ›na fotek v galerii dle pokynĹŻ V. PlaÄŤka
 ------------------------------------------------------------------
 ### 22.06.2015
-> Jan Závorka
-- Změna fontů, barev, pozadí, použit soubor textstyle.css
-- Upraven úvodní text
+> Jan ZĂˇvorka
+- ZmÄ›na fontĹŻ, barev, pozadĂ­, pouĹľit soubor textstyle.css
+- Upraven ĂşvodnĂ­ text
 ------------------------------------------------------------------
 ### 21.06.2015
-> Jan Závorka
-- Změna úvodního obrázku: zmenšení rozlišení (dlouhé načítání)
+> Jan ZĂˇvorka
+- ZmÄ›na ĂşvodnĂ­ho obrĂˇzku: zmenĹˇenĂ­ rozliĹˇenĂ­ (dlouhĂ© naÄŤĂ­tĂˇnĂ­)
 ------------------------------------------------------------------
 ### 20.06.2015
-> Jan Závorka
-- Na stránce "foto_2014" opraven pravý sloupec (partneři)
+> Jan ZĂˇvorka
+- Na strĂˇnce "foto_2014" opraven pravĂ˝ sloupec (partneĹ™i)
 ------------------------------------------------------------------
 ### 18.06.2015
-> Jan Závorka
-- Web oficiálně spuštěn
+> Jan ZĂˇvorka
+- Web oficiĂˇlnÄ› spuĹˇtÄ›n
