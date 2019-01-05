@@ -300,9 +300,8 @@ function imageError(image){
 	if(srcText.endsWith(imageSuffix[imageSuffix.length-1])){ //If all were tried, replace with error text
 		image.onerror = "";
 		image.alt = "Obrázek nebyl nalezen";
-		image.src = "img/image_error.png"; //img/image_error.png
-		//image.id.slice(7); is geting number of image from id (need for inserting error message to mySlides div)
-		document.getElementsByClassName("mySlides")[parseInt(image.id.slice(7), 10)-1].innerHTML += '<p class="imageErr">Omlouváme se, fotografie není k dispozici</p>';
+		image.src = "img/image_error.png"; //add transparent image (formatting reason)
+		image.parentElement.innerHTML += '<p class="imageErr">Omlouváme se, fotografie není k dispozici</p>'; //add text to parent div
 	}
 	else{ //Else try other specified
 		for(var i = 0; i < imageSuffix.length; i++){
