@@ -1,6 +1,11 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+### 08.01.2019
+> Jan Závorka
+- Změna defaultní _branch_ na githubu, aktuálně použito a defaultně nastaveno na _main_, _master_ byl smazán, mělo by se tím zabránit indexování a zobrazování repozitáře při vyhledávání googlem !!!
+------------------------------------------------------------------
+
 ### 05.01.2019
 > Jan Závorka
 - Úprava informačního textu při nenačtení fotografie ve fotogalerii
