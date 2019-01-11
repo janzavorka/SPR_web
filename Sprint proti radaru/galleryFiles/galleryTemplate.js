@@ -34,7 +34,7 @@
 				var num = i.toString();
 				gal = gal + '<div class="mySlides">';
 				gal = gal + '<div class="numbertext">' + num + '/' + allImages + '</div>';
-				gal = gal + '<img alt="unloaded" class="mainImage" id="mainImg' + num + '" src="img/black.png" onerror="imageError(this);" onload="showControlElem()">';
+				gal = gal + '<img alt="unloaded" class="mainImage" id="mainImg' + num + '" src="img/transparent.png">';
 				gal = gal + '</div>';
 			};
 

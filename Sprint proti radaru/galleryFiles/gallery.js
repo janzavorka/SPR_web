@@ -1,9 +1,11 @@
-//Get number of row
+/* >>>>>  Get number of mini's row <<<<< */
 function miniatureByPhoto (photoNum){
 	var row = Math.floor(((photoNum - 1 ) / miniaturesInRow)) + 1;
 	changeMiniatureRow(row);
 }
+/*-----------------------------------------------------*/
 
+/* >>>>> Changing row of miniatures <<<<< */
 function changeMiniatureRow(n){
 	//Check if index is OK
 	if(n < 1){
@@ -31,8 +33,9 @@ function changeMiniatureRow(n){
 		}
 	}
 }
+/*-----------------------------------------------------*/
 
-//Change main image
+/* >>>>>  Change main image <<<<< */
 function showSlides(n) {
 	var i;
 	var slides = document.getElementsByClassName("mySlides");
@@ -47,8 +50,8 @@ function showSlides(n) {
 	//Remove miniature-act class
 	for (i = 0; i < dots.length; i++) {
 		dots[i].className = dots[i].className.replace(" miniature-act",  "");
-
 	}
+	/*-----------------------------------------------------*/
 
 	miniatureByPhoto(slideIndex); //Display row of miniatures  according to selected main image
 	slides[slideIndex-1].style.display = "block"; //Display selected image
@@ -72,8 +75,9 @@ function showSlides(n) {
 	}
 	elemPositioning();
 }
+/*-----------------------------------------------------*/
 
-//Check if image index is OK
+/* >>>>>  Check if image index is OK <<<<< */
 function checkSlideIndex(n){
 	var slides = document.getElementsByClassName("mySlides");
 	if (n > slides.length) {
@@ -86,34 +90,40 @@ function checkSlideIndex(n){
 	return n;
 	}
 }
+/*-----------------------------------------------------*/
 
 
-// Open lightbox
+/* >>>>>  Open lightbox <<<<< */
 function openLightbox() {
   document.getElementById('myLightbox').style.display = "block";
 }
+/*-----------------------------------------------------*/
 
-// Close lightbox
+/* >>>>>  Close lightbox <<<<< */
 function closeLightbox() {
   document.getElementById('myLightbox').style.display = "none";
 }
+/*-----------------------------------------------------*/
 
-// Next/previous controls
+/* >>>>>  Next/previous controls <<<<< */
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
+/*-----------------------------------------------------*/
 
-//Row with miniatures change
+/* >>>>>  Row with miniatures change <<<<< */
 function plusMiniatureRow(n) {
 	changeMiniatureRow(rowMiniIndex += n);
 }
+/*-----------------------------------------------------*/
 
-// Thumbnail image controls
+/* >>>>>  Thumbnail image controls <<<<< */
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
+/*-----------------------------------------------------*/
 
-//Hide or display miniature row
+/* >>>>>  Hide or display miniature row <<<<< */
 function changeMinisDispState(){
 	var minCols = document.getElementsByClassName("column");
 	var mainLightBox = document.getElementsByClassName("lightboxContent");
@@ -141,8 +151,9 @@ function changeMinisDispState(){
 	miniatureByPhoto(slideIndex);
 	elemPositioning(); //Reposition all elements
 }
+/*-----------------------------------------------------*/
 
-//Positioning of arrow for changing image/miniature (calling when window size is changed)
+/* >>>>> Positioning of arrow for changing image/miniature (calling when window size is changed) <<<<< */
 function elemPositioning(){
 	var windowWidth = window.innerWidth;
 	var windowHeight = window.innerHeight;
@@ -165,7 +176,7 @@ function elemPositioning(){
 	var mainWidth = mainImgs[slideIndex-1].offsetWidth;
 	var mainHeight = mainImgs[slideIndex-1].offsetHeight;
 
-	/* >>>>> Positioning main image arrows <<<<< */
+	//Positioning main image arrows
 	//Disablig/deleting transition for better look
 	mainPrev[0].style.transition = "0.0s ease";
 	mainNext[0].style.transition = "0.0s ease";
@@ -179,14 +190,11 @@ function elemPositioning(){
 		mainPrev[0].style.transition = "0.6s ease";
 		mainNext[0].style.transition = "0.6s ease";
 	}, 400);
-	/*-----------------------------------------------------*/
 
-	/* >>>>> Positioning main image number <<<<< */
+	// Positioning main image number
 	document.getElementsByClassName("numbertext")[slideIndex-1].style.left = (mainMaxWidth-mainWidth)/2 + "px";
-	/*-----------------------------------------------------*/
 
-	/* >>>>> Positioning box for changing main image <<<<< */
-
+	// Positioning box for changing main image
 	var boxPrev = document.getElementsByClassName("prevBox")[0];
 	var boxNext = document.getElementsByClassName("nextBox")[0];
 
@@ -205,9 +213,8 @@ function elemPositioning(){
 	boxNext.style.right = (mainMaxWidth-mainWidth)/2 + "px";
 	boxPrev.style.height = mainHeight + "px";
 	boxNext.style.height = mainHeight + "px";
-	/*-----------------------------------------------------*/
 
-	/* >>>>> Positioning buttons for cahnging miniatures <<<<< */
+	//Positioning buttons for cahnging miniatures
 	var minisHeight = document.getElementsByClassName("miniature")[slideIndex-1].offsetHeight;
 	var minisPrev = document.getElementsByClassName("prevMini")[0];
 	var minisNext = document.getElementsByClassName("nextMini")[0];
@@ -239,19 +246,17 @@ function elemPositioning(){
 		miniaturesInRow = minisNumber;
 		miniatureByPhoto (slideIndex); //Check if are displayed miniature according to main image
 	}
-
+}
 	/*-----------------------------------------------------*/
 
-}
-
-
-//Change path and file name (by changing html attributes) according to which picture is displayed
+/* >>>>> Change path and file name (by changing html attributes) according to which picture is displayed <<<<< */
 function downloadPicturePath() {
 	document.getElementById("imgDownload").href = "foto/" + year + "/" + year + "_" + (slideIndex) + ".jpg";
 	document.getElementById("imgDownload").download = "SprintProtiRadaru" + year + "_foto" + (slideIndex) + ".jpg";
 }
+/*-----------------------------------------------------*/
 
-//LAZY LOADING (assign real path to main picture)
+/* >>>>> LAZY LOADING (assign real path to main picture) <<<<< */
 function lazyPicture(){
 	var prevIm = checkSlideIndex(slideIndex - 1);
 	var nextIm = checkSlideIndex(slideIndex + 1);
@@ -263,54 +268,86 @@ function lazyPicture(){
 		document.getElementsByClassName("numbertext")[slideIndex-1].style.display = "none";
 		document.getElementsByClassName("prev")[0].style.display = "none";
 		document.getElementsByClassName("next")[0].style.display = "none";
-
-		thisMainImage.removeAttribute("height");
-		thisMainImage.removeAttribute("width");
-		thisMainImage.alt = "Sprint proti radaru " + year;
-		thisMainImage.src = "foto/" + year + "/" + year + "_" + slideIndex + ".jpg";
+		loadImage (thisMainImage, slideIndex);
 	}
 	//Preload next and previous image (better performance)
 	if(prevMainImage.alt == "unloaded") {
-		prevMainImage.removeAttribute("height");
-		prevMainImage.removeAttribute("width");
-		prevMainImage.alt = "Sprint proti radaru " + year;
-		prevMainImage.src = "foto/" + year + "/" + year + "_" + prevIm + ".jpg";
+		loadImage (prevMainImage, prevIm);
 	}
 	if(nextMainImage.alt == "unloaded") {
-		nextMainImage.removeAttribute("height");
-		nextMainImage.removeAttribute("width");
-		nextMainImage.alt = "Sprint proti radaru " + year;
-		nextMainImage.src = "foto/" + year + "/" + year + "_" + nextIm + ".jpg";
+			loadImage (nextMainImage, nextIm);
 	}
+}
+/*-----------------------------------------------------*/
+
+/* >>>>> Load image <<<<< */
+function loadImage (image, number){
+	image.style.visibility='hidden' //Hide image until it isn't loaded
+	//Show loader
+	var loader = document.createElement('div'); //Create loader
+	loader.className = 'loader'; //Give class
+	image.parentNode.appendChild(loader); //Insert it
+	console.log(image.parentElement);
+	image.addEventListener("load", deleteLoader);
+
+	//if problem with loading image (for other suffixes)
+	image.addEventListener("error", imageError)
+
+	//Prepare image
+	image.removeAttribute("height");
+	image.removeAttribute("width");
+	image.alt = "Sprint proti radaru " + year;
+	image.src = "foto/" + year + "/" + year + "_" + number + ".jpg";
 
 }
+/*-----------------------------------------------------*/
 
-//Show control elements
+/* >>>>> If image is loaded, delete loader <<<<< */
+function deleteLoader (){
+	var loader = this.parentNode.getElementsByClassName('loader')[0]; //Get loader
+	console.log(loader);
+	showControlElem();
+	this.removeEventListener("load", deleteLoader);
+	this.parentNode.removeChild(loader); //Delete loader
+	this.style.visibility = "visible"; //Show image
+}
+/*-----------------------------------------------------*/
+
+/* >>>>> If error while loading image (image not found), trying other image filename extension <<<<< */
+function imageError(){
+	var srcText = decodeURI(this.src); //Function to replace special chars from URL and returning string
+	console.log(srcText);
+	if(srcText.endsWith(imageSuffix[imageSuffix.length-1])){ //If all were tried, replace with error text
+		this.removeEventListener("error", imageError);
+		this.alt = "Obrázek nebyl nalezen";
+		this.src = "img/transparent.png"; //add transparent image (formatting reason)
+		var error = document.createElement('p'); //add error text
+		error.className = 'imageErr';
+		var errorMessage = document.createTextNode("Omlouváme se, fotografie není k dispozici");
+		error.appendChild(errorMessage);
+		this.parentNode.appendChild(error); //Insert it
+		//Delete loader symbol
+		var loader = this.parentNode.getElementsByClassName('loader')[0]; //Get loader
+		this.parentNode.removeChild(loader); //Delete loader
+	}
+	else{ //Else try other specified
+		for(var i = 0; i < imageSuffix.length; i++){
+			if(srcText.endsWith(imageSuffix[i])){
+				console.log("Obrazek zkousim" + imageSuffix[i+1]);
+				this.src = encodeURI(srcText.substring(0, srcText.lastIndexOf("."))) + imageSuffix[i+1];
+				console.log("Nova src: " + this.src)
+				break;
+			}
+		}
+	}
+}
+/*-----------------------------------------------------*/
+
+/* >>>>> Show control elements <<<<< */
 function showControlElem(){
 	document.getElementsByClassName("numbertext")[slideIndex-1].style.display = "block";
 	document.getElementsByClassName("prev")[0].style.display = "block";
 	document.getElementsByClassName("next")[0].style.display = "block";
 	elemPositioning();
 }
-
-//If error while loading image (image not found), trying other image filename extension
-function imageError(image){
-	var srcText = decodeURI(image.src); //Function to replace special chars from URL and returning string
-	console.log(srcText);
-	if(srcText.endsWith(imageSuffix[imageSuffix.length-1])){ //If all were tried, replace with error text
-		image.onerror = "";
-		image.alt = "Obrázek nebyl nalezen";
-		image.src = "img/image_error.png"; //add transparent image (formatting reason)
-		image.parentElement.innerHTML += '<p class="imageErr">Omlouváme se, fotografie není k dispozici</p>'; //add text to parent div
-	}
-	else{ //Else try other specified
-		for(var i = 0; i < imageSuffix.length; i++){
-			if(srcText.endsWith(imageSuffix[i])){
-				console.log("Obrazek zkousim" + imageSuffix[i+1]);
-				image.src = encodeURI(srcText.substring(0, srcText.lastIndexOf("."))) + imageSuffix[i+1];
-				console.log("Nova src: " + image.src)
-				break;
-			}
-		}
-	}
-}
+/*-----------------------------------------------------*/
