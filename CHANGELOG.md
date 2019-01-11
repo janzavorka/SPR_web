@@ -1,6 +1,18 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+### 11.01.2019
+> Jan Závorka
+- Úprava galerie:
+    - Loadovací symbol při načítání fotografie
+    - Upraveno vkládání chybové hlášky při nenalezení fotografie (nyní nerozbíjí HTML)
+- Přesunutí funkce pro vkládání externího html/textu do stránky do _tools.js_ (pro budoucí použití)
+- Úprava analýzy návštěvnosti:
+    - Zrušení analýzy pomocí toplist.cz, zůstává pouze Google analytics
+    - Úprava cookie lišty: funkce pro analýzu návštěvnosti je volána až když uživatel odsouhlasí používání cookie (viz. _EUCookie.js_) tj. pokud uživatel neposkytl souhlas, analýza se neporvede
+    - původní soubor pro analýzu _analyza.js_ je nyní zbytečný, úplně odstraněn
+------------------------------------------------------------------
+
 ### 08.01.2019
 > Jan Závorka
 - Změna defaultní _branch_ na githubu, aktuálně použito a defaultně nastaveno na _main_, _master_ byl smazán, mělo by se tím zabránit indexování a zobrazování repozitáře při vyhledávání googlem !!!
@@ -79,7 +91,7 @@ All notable changes to this project will be documented in this file.
 ------------------------------------------------------------------
 ### 17.06.2018
 > Jan Závorka
-- Oprava stahování fotek pomocí tlačítka v galerii, nyní se již správně přidává přípona *.jpg
+- Oprava stahování fotek pomocí tlačítka v galerii, nyní se již správně přidává přípona \*.jpg
 ------------------------------------------------------------------
 ### 01.06.2018
 > Jan Závorka
