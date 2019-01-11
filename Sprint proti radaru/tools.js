@@ -1,3 +1,8 @@
+/* >>>>>  Function for inserting html/text file to existing html page <<<<< */
+/* How to use it:
+*   place "<div include-html="content.html"></div>" where html should be placed
+*   call includeHTML() at the bottom of the page
+*/
 function includeHTML() {
   var z, i, elmnt, file, xhttp;
   /*loop through a collection of all HTML elements:*/
@@ -14,10 +19,10 @@ function includeHTML() {
           if (this.status == 200) {elmnt.innerHTML = this.responseText;}
           if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
           /*remove the attribute, and call this function once more:*/
-          elmnt.removeAttribute("include-html"); 
+          elmnt.removeAttribute("include-html");
           includeHTML();
         }
-      } 
+      }
       xhttp.open("GET", file, true);
       xhttp.send();
       /*exit the function:*/
@@ -25,5 +30,4 @@ function includeHTML() {
     }
   }
 }
-
-
+/*-----------------------------------------------------*/
