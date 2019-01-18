@@ -1,6 +1,20 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+### 18.01.2019
+> Jan Závorka
+- Úprava kontaktního formuláře:
+  - Ověření správnosti tvaru emailové adresy (javascript)
+  - Ověření zda zpráva není prázdná
+  - Vypisují se chybové hlášky (vůbec se nezavolá php script)
+  - Antibot (pomocí neviditelného pole)
+  - Přesun obou scriptů do složky "contactForm"
+  - Drobné úpravy PHP scriptu:
+    - Při odeslání se jen ověřuje, že vstupní pole jsou neprázdná (prázdné pro antibota)
+    - Ověření odeslání mailu (návratová hodnota mail())
+    - Přesměrování po odeslání i se správným kódem
+------------------------------------------------------------------
+
 ### 11.01.2019
 > Jan Závorka
 - Úprava galerie:
