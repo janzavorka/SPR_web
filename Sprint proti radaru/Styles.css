@@ -49,6 +49,11 @@ textarea {
     	color: #262626;
 	cursor: pointer;
 }
+
+.formErr{
+	position: absolute;
+	color: red;
+}
 /*========================================================================*/
 ul {
 	list-style-type: none;

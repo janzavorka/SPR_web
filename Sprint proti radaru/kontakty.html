@@ -7,13 +7,13 @@
 				<meta property="og:image" content="img/logo_FB.png">
         <link rel="stylesheet" type="text/css" href="Styles.css">
         <link rel="stylesheet" type="text/css" href="CookieInfoStyle.css">
+				<script src="contactForm/validateForm.js"></script>
         <script src="EUCookie.js"></script>
         <script src="CookieCZ.js" async></script>
         <link rel="shortcut icon" href="img/favicon.ico" >
 		<title>Sprint proti radaru</title>
     </head>
 
-	<body>
 		<div class="main">
 			<img src="img/hlavicka.png" height="200" width="1000" alt="Sprint proti radaru">
 			<div class="content">
@@ -46,15 +46,22 @@
 					<p>
 						Kontaktujte nás odesláním formuláře níže.
 					</p>
-					<form action="poslat_mail.php" method="post">
+					<form onsubmit="return validateForm()" action="contactForm/send_ContactForm.php" method="post">
 						<div>
 							<label for="email">Email:</label>
 							<input type="text" id="email" name="email" accesskey="e">
+							<span id="emailErr" class="formErr"></span>
 						</div>
 						<div>
 							<label for="text">Text:</label>
 							<textarea id="text" name="text" accesskey="t"></textarea>
+							<span id="textErr" class="formErr"></span>
 						</div>
+						<!--antibot -->
+						<div>
+								<label style="display: none">Nevyplňujte <input id="test_URL" type="text" name="url"></label>
+						</div>
+						<!--antibot -->
 						<div>
 							<input type="submit" class="button" value="Odeslat"/>
 							<input type="reset" class="button" value="Vymazat"/>
