@@ -15,12 +15,12 @@ function validateForm(){
   }
   else{
     formOK = false;
-    mailErr.innerText = "Zadejte váš email."
+    mailErr.innerText = "Zadejte email."
   }
   //Message testing (if it is not empty)
   if(message==""){
     formOK = false;
-    textErr.innerText = "Zadejte, prosím, zprávu.";
+    textErr.innerText = "Zadejte prosím zprávu.";
   }
   else {
     textErr.innerText = "";

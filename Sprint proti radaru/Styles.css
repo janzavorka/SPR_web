@@ -53,6 +53,7 @@ textarea {
 .formErr{
 	position: absolute;
 	color: red;
+	font-size: 90%;
 }
 /*========================================================================*/
 ul {
