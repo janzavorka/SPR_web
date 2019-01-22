@@ -7,6 +7,7 @@ All notable changes to this project will be documented in this file.
   - opraveny chyb dle issue #9 :
     - v php skriptu se přímo ověřuje emailová adresa podle filtru
     - použití funkce ```mb_send_mail ($to, $subject, $mess, $extra); ```, správně zobrazuje českou diakritiku
+    - opraveny hlášky při neplatném emailu/zprávě
 ------------------------------------------------------------------
 
 ### 18.01.2019
