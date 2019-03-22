@@ -1,6 +1,15 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+### 23.03.2019
+> Jan Závorka
+- Nahrány informace o nové (6) ročníku:
+  - změna času, startuje se v 11:00
+  - Upraven plakát a leták a .ics souboru
+  - Upravena stránka _letos_ a _letos_nahrada_
+  - Přidáno _foto\_2019.html_ a příslušný soubor pro komentáře 
+------------------------------------------------------------------
+
 ### 22.01.2019
 > Jan Závorka
 - Kontaktní formulář - php skript:
