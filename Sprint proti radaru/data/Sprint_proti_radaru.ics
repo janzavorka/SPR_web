@@ -1,6 +1,6 @@
 BEGIN:VCALENDAR
 VERSION:2.0
-PRODID:-//www.marudot.com//iCal Event Maker
+PRODID:-//ical.marudot.com//iCal Event Maker
 CALSCALE:GREGORIAN
 BEGIN:VTIMEZONE
 TZID:Europe/Berlin
@@ -22,10 +22,10 @@ RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-DTSTAMP:20181008T145212Z
-UID:20181008T145212Z-1584834232@marudot.com
-DTSTART;TZID="Europe/Berlin":20190630T123000
-DTEND;TZID="Europe/Berlin":20190630T160000
+DTSTAMP:20190322T233556Z
+UID:20190322T233556Z-1893486431@marudot.com
+DTSTART;TZID=Europe/Berlin:20190630T110000
+DTEND;TZID=Europe/Berlin:20190630T150000
 SUMMARY:Sprint proti radaru
 URL:www.sprintprotiradaru.cz
 DESCRIPTION:Krátký sprint proti stacionárnímu silničnímu radaru\, 6. ročník.\nVíce informací na www.sprintprotiradaru.cz\n 
@@ -33,7 +33,7 @@ LOCATION:Hotel Králíček\, Kacanovy 38\, Česká republika
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Sprint proti radaru
-TRIGGER:-P2D
+TRIGGER:-P1W
 END:VALARM
 END:VEVENT
 END:VCALENDAR
