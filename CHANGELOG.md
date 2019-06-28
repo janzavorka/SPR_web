@@ -1,13 +1,19 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+### 28.06.2019
+> Jan Závorka
+- Přidán soubor _analyzaTOPlist.js_ pro počítání návštěvníků
+- Oproti Google analytics poskytuje méně informací, ale pro spuštění skriptu není potřeba souhlas z cookie lišty 
+------------------------------------------------------------------
+
 ### 23.03.2019
 > Jan Závorka
 - Nahrány informace o nové (6) ročníku:
   - změna času, startuje se v 11:00
   - Upraven plakát a leták a .ics souboru
   - Upravena stránka _letos_ a _letos_nahrada_
-  - Přidáno _foto\_2019.html_ a příslušný soubor pro komentáře 
+  - Přidáno _foto\_2019.html_ a příslušný soubor pro komentáře
 ------------------------------------------------------------------
 
 ### 22.01.2019
