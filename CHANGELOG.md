@@ -1,10 +1,16 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+### 30.06.2019
+> Jan Závorka
+- Přidány fotografie a výsledková listina z 6. ročníku (2019)
+- Upraveny dílčí .html soubory
+------------------------------------------------------------------
+
 ### 28.06.2019
 > Jan Závorka
 - Přidán soubor _analyzaTOPlist.js_ pro počítání návštěvníků
-- Oproti Google analytics poskytuje méně informací, ale pro spuštění skriptu není potřeba souhlas z cookie lišty 
+- Oproti Google analytics poskytuje méně informací, ale pro spuštění skriptu není potřeba souhlas z cookie lišty
 ------------------------------------------------------------------
 
 ### 23.03.2019
