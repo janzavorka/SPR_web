@@ -1,5 +1,11 @@
 # Changelog
 All notable changes to this project will be documented in this file.
+### 03.05.2020
+> Jan Závorka
+- Přidány infromace k 7. ročníku (2020)
+  - Úprava html stránek
+  - Přidán plakát, leták, .ics záznam
+------------------------------------------------------------------
 
 ### 30.06.2019
 > Jan Závorka

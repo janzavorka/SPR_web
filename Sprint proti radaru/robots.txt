@@ -5,6 +5,8 @@ Allow: /foto/2014/  #Povolí přístup do jednotlivých složek s fotkama
 Allow: /foto/2015/
 Allow: /foto/2016/
 Allow: /foto/2017/
+Allow: /foto/2018/
+Allow: /foto/2019/
 
 # Ještě speciálně pro google
 User-agent: Googlebot
@@ -14,6 +16,9 @@ Allow: /foto/2014/  #Povolí přístup do jednotlivých složek s fotkama
 Allow: /foto/2015/
 Allow: /foto/2016/
 Allow: /foto/2017/
+Allow: /foto/2018/
+Allow: /foto/2019/
+
 
 # Ještě speciálně pro seznam
 User-agent: Seznambot
@@ -23,3 +28,6 @@ Allow: /foto/2014/  #Povolí přístup do jednotlivých složek s fotkama
 Allow: /foto/2015/
 Allow: /foto/2016/
 Allow: /foto/2017/
+Allow: /foto/2018/
+Allow: /foto/2019/
+
