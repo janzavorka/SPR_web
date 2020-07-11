@@ -1,6 +1,7 @@
 form {
 	margin: 0 auto;
-	width: 500px;
+	width:500px;
+	display:block;
 	padding-top: 1em;
 }
 form div + div {
@@ -15,6 +16,7 @@ label {
 
 input, textarea {
 	font: 1em sans-serif;
+	font-size: 1em;
 	width: 400px;
 	box-sizing: border-box;
 	border: 1px solid #999;
@@ -26,13 +28,13 @@ input:focus, textarea:focus {
 
 textarea {
 	vertical-align: top;
-	height: 10em;
+	height: 15em;
 }
 .button{
 	color: #262626;
 	background-color: #82b50b;
 	font-family:verdana;
-	font-size:110%;
+	font-size:1.3em;
 	font-weight: bold;
     	border: none;
     	padding: 5px 15px;
@@ -53,7 +55,7 @@ textarea {
 .formErr{
 	position: absolute;
 	color: red;
-	font-size: 90%;
+	font-size: 0.9em;
 }
 /*========================================================================*/
 ul {
@@ -73,7 +75,7 @@ li a {
   text-decoration: none;
 	text-align: left;
 	font-family:verdana;
-	font-size:130%;
+	font-size:1.3em;
 	font-weight: bold;
 }
 li a:hover {
@@ -108,32 +110,32 @@ ol li{
   text-decoration: none;
 	text-align: left;
 	font-family:verdana;
-	font-size:100%;
+	font-size:1em;
 }
 /*========================================================================*/
 body {
 	background-image:url("img/bckground.png");
 }
 .main{
-	width:1000px;
+	width:auto;
+	max-width: 1000px;
 	margin: auto;
 	position:relative;
 }
 .content{
-	display:table;
+	/*display:table;*/
 	float:left;
-	display:block;
+	display: grid;
+  grid-template-columns: 1fr 5fr;
 	/*border-top: 5px solid #82b50b;*/
 }
 .content-left{
-	width:200px;
-	display: table-cell;
+	/*width:200px;*/
 	background-color: #82b50b;
 }
 .content-right{
 	padding:0px 20px 0px 20px;
-	width:780px;
-	display: table-cell;
+	/*width:780px;*/
 	text-align:left;
 	/*border-left: 5px solid #82b50b;*/
 }
@@ -141,7 +143,10 @@ body {
 	text-align:center;
 	color:#262626;
     	font-family:verdana;
-    	font-size:130%;
+    	font-size: 1.8em;
+			/*font-size: 3vw;*/
+		/*	display: block;*/
+		width: 200px;
 	font-weight: bold;
 }
 .partners img{
@@ -156,12 +161,12 @@ body {
 .font-basic{
 	color:#bff442;
     	font-family:verdana;
-    	font-size:130%;
+    	font-size:1.2em;
 }
 .font-link{
 	color:#bff442;
    	font-family:verdana;
-    	font-size:100%;
+    	font-size:1.2em;
 	text-decoration: underline;
 	font-weight:normal;
 }
@@ -171,10 +176,11 @@ body {
 .partners .font-link{
 	color:#262626;
    	font-family:verdana;
-    	font-size:100%;
+    	font-size:  0.7em;
+
 	text-decoration: underline;
 	font-weight:bold;
-	line-height: 200%;
+/*	line-height: 2em;*/
 }
 .partners .font-link:hover{
 	color:#f4fe00;
@@ -184,18 +190,20 @@ body {
 	color:#f4fe00; /*Světle žlutá*/
 	/*color: #dbe400; /*Tmavě žlutá*/
 	font-weight:bold;
+	font-size:1.33em;
 }
 .font-title{
-	font-size:140%;
+	font-size:1.8em;
 	font-weight:bold;
 	color: #f4fe00;
 	text-align:center;
 	margin:auto;
-	display: inline-block;
-	height: 2em;
-	width: 100%;
+	display: block;
+	/*height: 2em;*/
+	/*width: 100%;*/
 }
 .font-extra-height{
-	line-height: 150%;
+	line-height: 1.8em;
+	font-size:1.2em;
 }
 /*========================================================================*/

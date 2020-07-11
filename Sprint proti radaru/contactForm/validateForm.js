@@ -1,6 +1,6 @@
 /* >>>>> Validating contact form <<<<< */
 function validateForm(){
-  console.log("testuji");
+  console.log("Kontroluji údaje ve formuláři");
   var formOK = true;
   //Form inputs
   var mail = document.getElementById("email").value;

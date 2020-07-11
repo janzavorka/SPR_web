@@ -1,5 +1,19 @@
 # Changelog
 All notable changes to this project will be documented in this file.
+
+### 05.07.2020
+> Jan Závorka
+- Nahrání fotek a výsledků ze 7. ročníku
+- Výměna/úprava stránky _letos.html_ a úprava stránky _index.html_
+------------------------------------------------------------------
+
+### 03.07.2020
+> Jan Závorka
+- Příprava dat pro nahrání výledků a fotek ze 7. ročníku
+- Úprava formátování textu na stránkách (nyní by mělo vypadat lépe na mobilních zařízeních)
+- Úprava pozicování olvádacích prvků v galerii
+------------------------------------------------------------------
+
 ### 03.05.2020
 > Jan Závorka
 - Přidány infromace k 7. ročníku (2020)

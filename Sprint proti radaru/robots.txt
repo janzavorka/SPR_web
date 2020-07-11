@@ -7,10 +7,13 @@ Allow: /foto/2016/
 Allow: /foto/2017/
 Allow: /foto/2018/
 Allow: /foto/2019/
+Allow: /foto/2020/
+Allow: /foto/2021/
+Allow: /foto/2022/
 
 # Ještě speciálně pro google
 User-agent: Googlebot
-Disallow: /img/
+#Disallow: /img/
 Disallow: /foto/    #Zakáže přístup do složky foto (aby se neindexovaly miniatury
 Allow: /foto/2014/  #Povolí přístup do jednotlivých složek s fotkama
 Allow: /foto/2015/
@@ -18,6 +21,13 @@ Allow: /foto/2016/
 Allow: /foto/2017/
 Allow: /foto/2018/
 Allow: /foto/2019/
+Allow: /foto/2020/
+Allow: /foto/2021/
+Allow: /foto/2022/
+
+
+User-agent: Googlebot-Image
+Disallow: /img/
 
 
 # Ještě speciálně pro seznam
@@ -30,4 +40,6 @@ Allow: /foto/2016/
 Allow: /foto/2017/
 Allow: /foto/2018/
 Allow: /foto/2019/
-
+Allow: /foto/2020/
+Allow: /foto/2021/
+Allow: /foto/2022/
