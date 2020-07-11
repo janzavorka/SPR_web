@@ -31,3 +31,16 @@ function includeHTML() {
   }
 }
 /*-----------------------------------------------------*/
+
+/* >>>>>  Function for inserting html/text file to existing html page <<<<< */
+/* How to use it:
+*   place "<div include-html="content.html"></div>" where html should be placed
+*   call includeHTML() at the bottom of the page
+*/
+function editURLParameter(parameter, value) {
+  const params = new URLSearchParams(location.search); //Read URL
+  params.set(parameter, value); //Update parameters
+  window.history.replaceState({}, '', `${location.pathname}?${params}`); //Update user URL
+  return;
+}
+/*-----------------------------------------------------*/

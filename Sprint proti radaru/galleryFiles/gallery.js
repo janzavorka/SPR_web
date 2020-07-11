@@ -43,6 +43,7 @@ function showSlides(n) {
 	var captionText = document.getElementById("caption");
 	slideIndex = checkSlideIndex(n);
 	lazyPicture(); //Load image if it is not
+	editURLParameter('photo', 	slideIndex); //Add slideIndex (photo number) as URL parameter
 	//Hide all main images
 	for (i = 0; i < slides.length; i++) {
 	    	slides[i].style.display = "none";
@@ -305,7 +306,7 @@ function loadImage (image, number){
 /* >>>>> If image is loaded, delete loader <<<<< */
 function deleteLoader (){
 	var loader = this.parentNode.getElementsByClassName('loader')[0]; //Get loader
-	console.log(loader);
+	console.log("Deleting loader");
 	showControlElem();
 	this.removeEventListener("load", deleteLoader);
 	this.parentNode.removeChild(loader); //Delete loader
@@ -326,9 +327,6 @@ function imageError(){
 		var errorMessage = document.createTextNode("Omlouváme se, fotografie není k dispozici");
 		error.appendChild(errorMessage);
 		this.parentNode.appendChild(error); //Insert it
-		//Delete loader symbol
-		var loader = this.parentNode.getElementsByClassName('loader')[0]; //Get loader
-		this.parentNode.removeChild(loader); //Delete loader
 	}
 	else{ //Else try other specified
 		for(var i = 0; i < imageSuffix.length; i++){
