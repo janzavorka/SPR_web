@@ -32,10 +32,11 @@ function includeHTML() {
 }
 /*-----------------------------------------------------*/
 
-/* >>>>>  Function for inserting html/text file to existing html page <<<<< */
+/* >>>>>  Function to edit URL parameter <<<<< */
 /* How to use it:
-*   place "<div include-html="content.html"></div>" where html should be placed
-*   call includeHTML() at the bottom of the page
+*   If parameter doesn't exist, function creates it
+*   If parameter exists, function changes it
+*   Function automaticly update user URL with set parameters
 */
 function editURLParameter(parameter, value) {
   const params = new URLSearchParams(location.search); //Read URL
@@ -43,4 +44,48 @@ function editURLParameter(parameter, value) {
   window.history.replaceState({}, '', `${location.pathname}?${params}`); //Update user URL
   return;
 }
+/*-----------------------------------------------------*/
+
+/* >>>>>  Function to delete URL parameter <<<<< */
+/* How to use it:
+*   Function deletes given URL parametr
+*   Function automaticly update user URL
+*/
+function deleteURLParameter(parameter) {
+  const params = new URLSearchParams(location.search); //Read URL
+  params.delete(parameter); //Update parameters
+  window.history.replaceState({}, '', `${location.pathname}?${params}`); //Update user URL
+  return;
+}
+/*-----------------------------------------------------*/
+
+/* >>>>>  Function to read URL parameter - number <<<<< */
+/* How to use it:
+*   Use only with positive numers/zero
+*   Function reads specified parameter, if it is positive number, it returns it's value
+*   If parameter doesn't exist or has wrong value, function returns -1
+*/
+function getURLParameterNumber(parameter) {
+  const params = new URLSearchParams(location.search); //Read URL
+  let number = parseInt(params.get(parameter), 10); // Read parameter, parse it as number
+  if(Number.isInteger(number) && number > 0){
+    return number;
+  }
+  return -1;
+}
+/*-----------------------------------------------------*/
+
+
+/* >>>>>  Function to test if mobile device is used <<<<< */
+/* 
+*/
+function isMobileDevice(){
+  if('ontouchstart' in window || window.orientation > -1){
+    return true;
+  }
+  else{
+    return false;
+  }
+}
+
 /*-----------------------------------------------------*/
