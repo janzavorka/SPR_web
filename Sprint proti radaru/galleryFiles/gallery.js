@@ -43,7 +43,7 @@ function showSlides(n) {
 	var captionText = document.getElementById("caption");
 	slideIndex = checkSlideIndex(n);
 	lazyPicture(); //Load image if it is not
-	editURLParameter('photo', 	slideIndex); //Add slideIndex (photo number) as URL parameter
+	editURLParameter('photo',slideIndex); //Add slideIndex (photo number) as URL parameter
 	//Hide all main images
 	for (i = 0; i < slides.length; i++) {
 	    	slides[i].style.display = "none";
@@ -52,7 +52,7 @@ function showSlides(n) {
 	for (i = 0; i < dots.length; i++) {
 		dots[i].className = dots[i].className.replace(" miniature-act",  "");
 	}
-	/*-----------------------------------------------------*/
+
 
 	miniatureByPhoto(slideIndex); //Display row of miniatures  according to selected main image
 	slides[slideIndex-1].style.display = "block"; //Display selected image
@@ -97,12 +97,15 @@ function checkSlideIndex(n){
 /* >>>>>  Open lightbox <<<<< */
 function openLightbox() {
   document.getElementById('myLightbox').style.display = "block";
+	history.pushState(null, document.title, location.href);
+	window.addEventListener('popstate', backButtonGallery);
 }
 /*-----------------------------------------------------*/
 
 /* >>>>>  Close lightbox <<<<< */
 function closeLightbox() {
   document.getElementById('myLightbox').style.display = "none";
+	deleteURLParameter('photo');
 }
 /*-----------------------------------------------------*/
 
@@ -123,6 +126,24 @@ function currentSlide(n) {
   showSlides(slideIndex = n);
 }
 /*-----------------------------------------------------*/
+
+/* >>>>>  Hide minis <<<<< */
+function hideMinis(n) {
+  if(miniaturesDisplayed == true){
+		changeMinisDispState();
+	}
+}
+/*-----------------------------------------------------*/
+
+/* >>>>>  Show minis <<<<< */
+function showMinis(n) {
+	if(miniaturesDisplayed == false){
+		changeMinisDispState();
+	}
+}
+/*-----------------------------------------------------*/
+
+
 
 /* >>>>>  Hide or display miniature row <<<<< */
 function changeMinisDispState(){
@@ -163,6 +184,7 @@ function elemPositioning(){
 	var mainNext = document.getElementsByClassName("next");
 	var mainMaxWidth = document.getElementById("lbContent").offsetWidth;
 
+	//console.log("Sirka textu " + document.getElementsByClassName("imageErr")[0].scrollWidth);
 	//Changing maximum dimension of main image according to if miniatures are displayed
 	if(miniaturesDisplayed){
 		mainImgs[slideIndex-1].style.cssText = "max-height:" + windowHeight*0.7 + "px";
@@ -230,7 +252,6 @@ function elemPositioning(){
 		minisPrev.style.transition = "0.6s ease";
 		minisNext.style.transition = "0.6s ease";
 	}, 400);
-	/*-----------------------------------------------------*/
 
 	/* >>>>> Positioning and changing number of miniatures in row according to viewport width <<<<< */
 	var allMinis = document.getElementsByClassName("miniature"); //Dodělat tak aby se počet miniatur v řádku měnil podle šířky obrazovky
@@ -240,20 +261,33 @@ function elemPositioning(){
 	var minisWidth = allMinis[slideIndex-1].naturalWidth; //Use displayed miniature
 	//Count number of miniatures in row
 	var minisNumber = Math.floor((windowWidth*(spaceForMinis/100)) / minisWidth);
-	if ((minisNumber != miniaturesInRow) && (minisNumber > 5)){ //Don't show less than 6 miniatures, do it only if number of displayed miniature would change
+	/*if ((minisNumber != miniaturesInRow) && (minisNumber > 5)){ //Don't show less than 6 miniatures, do it only if number of displayed miniature would change
 		for(var i = 0; i < minCols.length; i++){ //Size of class column which is holding miniature
-			minCols[i].style.width = (spaceForMinis) / minisNumber + "%";
+			minCols[i].style.width = (spaceForMinis / minisNumber + "%");
 		}
+
+
 		miniaturesInRow = minisNumber;
 		miniatureByPhoto (slideIndex); //Check if are displayed miniature according to main image
+	}*/
+	if(minisNumber < 6){
+		minisNumber = 6;
 	}
+	for(var i = 0; i < minCols.length; i++){ //Size of class column which is holding miniature
+		minCols[i].style.width = (spaceForMinis / minisNumber + "%");
+	}
+	miniaturesInRow = minisNumber;
+	miniatureByPhoto (slideIndex); //Check if are displayed miniature according to main image
 }
 	/*-----------------------------------------------------*/
 
 /* >>>>> Change path and file name (by changing html attributes) according to which picture is displayed <<<<< */
 function downloadPicturePath() {
-	document.getElementById("imgDownload").href = "foto/" + year + "/" + year + "_" + (slideIndex) + ".jpg";
-	document.getElementById("imgDownload").download = "SprintProtiRadaru" + year + "_foto" + (slideIndex) + ".jpg";
+	//Get correct image suffix
+	var srcText = decodeURI(document.getElementById("mainImg" + slideIndex).src); //Function to replace special chars from URL and returning string
+	var suffix = srcText.substring(srcText.lastIndexOf(".")); //Get suffix from src
+	document.getElementById("imgDownload").href = "foto/" + year + "/" + year + "_" + (slideIndex) + suffix;
+	document.getElementById("imgDownload").download = "SprintProtiRadaru" + year + "_foto" + (slideIndex) + suffix;
 }
 /*-----------------------------------------------------*/
 
@@ -289,7 +323,7 @@ function loadImage (image, number){
 	loader.className = 'loader'; //Give class
 	image.parentNode.appendChild(loader); //Insert it
 	console.log(image.parentElement);
-	image.addEventListener("load", deleteLoader);
+	image.addEventListener("load", imageLoaded);
 
 	//if problem with loading image (for other suffixes)
 	image.addEventListener("error", imageError)
@@ -303,14 +337,18 @@ function loadImage (image, number){
 }
 /*-----------------------------------------------------*/
 
-/* >>>>> If image is loaded, delete loader <<<<< */
-function deleteLoader (){
+/* >>>>> If image is loaded, delete loader, add download button <<<<< */
+function imageLoaded (){
 	var loader = this.parentNode.getElementsByClassName('loader')[0]; //Get loader
-	console.log("Deleting loader");
+	console.log(loader);
 	showControlElem();
-	this.removeEventListener("load", deleteLoader);
+	this.removeEventListener("load", imageLoaded);
 	this.parentNode.removeChild(loader); //Delete loader
 	this.style.visibility = "visible"; //Show image
+	if(this.alt != errImageAltText){ //If image is properly loaded, show download button
+		document.getElementById("imgDownload").style.visibility = "visible";
+	}
+
 }
 /*-----------------------------------------------------*/
 
@@ -320,20 +358,23 @@ function imageError(){
 	console.log(srcText);
 	if(srcText.endsWith(imageSuffix[imageSuffix.length-1])){ //If all were tried, replace with error text
 		this.removeEventListener("error", imageError);
-		this.alt = "Obrázek nebyl nalezen";
+		this.alt = errImageAltText;
 		this.src = "img/transparent.png"; //add transparent image (formatting reason)
 		var error = document.createElement('p'); //add error text
 		error.className = 'imageErr';
 		var errorMessage = document.createTextNode("Omlouváme se, fotografie není k dispozici");
 		error.appendChild(errorMessage);
 		this.parentNode.appendChild(error); //Insert it
+		//If image is missing - hide download button
+		document.getElementById("imgDownload").style.visibility = "hidden";
+
 	}
 	else{ //Else try other specified
 		for(var i = 0; i < imageSuffix.length; i++){
 			if(srcText.endsWith(imageSuffix[i])){
 				console.log("Obrazek zkousim" + imageSuffix[i+1]);
 				this.src = encodeURI(srcText.substring(0, srcText.lastIndexOf("."))) + imageSuffix[i+1];
-				console.log("Nova src: " + this.src)
+				console.log("Nova src: " + this.src);
 				break;
 			}
 		}
@@ -349,3 +390,59 @@ function showControlElem(){
 	elemPositioning();
 }
 /*-----------------------------------------------------*/
+
+/* >>>>> If device chnge it's size (including orientation), function adjusts layout <<<<< */
+function processSizeChange(){
+	//Hide or show miniatures automaticly if changing display orientation (only for mobile devices)
+	if(isMobileDevice()){
+		if (window.matchMedia("(orientation: landscape)").matches && previousOrientation != "landscape") {
+			previousOrientation = "landscape";
+	   	hideMinis();
+	 	}
+		else if(window.matchMedia("(orientation: portrait)").matches && previousOrientation != "portrait"){
+		 previousOrientation = "portrait";
+		 showMinis();
+	 	}
+	}
+	//console.log("mobile device detected " + isMobileDevice());
+	elemPositioning();
+}
+
+/*-----------------------------------------------------*/
+
+/* >>>>> If parameter is set and correct open relevant image <<<<< */
+function openImageByParameter(){
+	let photoNumFromURL = getURLParameterNumber('photo'); //Get number value of parameter
+	if(photoNumFromURL > 0 && photoNumFromURL <= imageCount){ //Check if number is correct
+		openLightbox();
+		currentSlide(photoNumFromURL);
+	}
+	else{
+		deleteURLParameter('photo');
+	}
+}
+
+/*-----------------------------------------------------*/
+
+/* >>>>> Use browser back button to close gallery and see thumbnail <<<<< */
+function backButtonGallery(){
+	window.removeEventListener('popstate', backButtonGallery);
+	closeLightbox();
+}
+
+/*-----------------------------------------------------*/
+
+function toggleFullScreen() {
+  var doc = window.document;
+  var docEl = doc.documentElement;
+
+  var requestFullScreen = docEl.requestFullscreen || docEl.mozRequestFullScreen || docEl.webkitRequestFullScreen || docEl.msRequestFullscreen;
+  var cancelFullScreen = doc.exitFullscreen || doc.mozCancelFullScreen || doc.webkitExitFullscreen || doc.msExitFullscreen;
+
+  if(!doc.fullscreenElement && !doc.mozFullScreenElement && !doc.webkitFullscreenElement && !doc.msFullscreenElement) {
+    requestFullScreen.call(docEl);
+  }
+  else {
+    cancelFullScreen.call(doc);
+  }
+}

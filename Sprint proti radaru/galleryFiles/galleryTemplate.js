@@ -7,8 +7,10 @@
 
 		var miniaturesDisplayed = new Boolean(true); //State of displaying miniatures
 		var commentsReady = true;	//Use imported comments
+		var previousOrientation = "unknown";
 
 		var imageSuffix = [".jpg", ".gif", ".png"]; //Defines all possible image filename extensions (default is .jpg)
+		const errImageAltText = "Obrázek nebyl nalezen";
 
 		window.onload = function() {
 			year = galleryYear.toString();
@@ -72,5 +74,10 @@
 			document.getElementById('gallery-place').innerHTML = gal; //Print gal to html page
 
 			includeHTML(); //Do all include-html
-			window.addEventListener('resize', elemPositioning); //Check if window size is changed and position control elements
+			processSizeChange();
+			window.addEventListener('resize', processSizeChange); //Check if window size is changed and position control element
+
+			//window.addEventListener('resize',  processOrientationChange); //Check if window size is changed and position control elementss
+			//window.addEventListener('orientationchange', processOrientationChange, true); //For hiding/showing minis automaticly in mobile browsers
+			openImageByParameter(); //Open photo respective to URL parametr
 		}
