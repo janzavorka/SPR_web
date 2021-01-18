@@ -22,18 +22,13 @@ RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-DTSTAMP:20200503T122137Z
-UID:20200503T122137Z-2139617970@marudot.com
-DTSTART;TZID=Europe/Berlin:20200705T110000
-DTEND;TZID=Europe/Berlin:20200705T150000
-SUMMARY:Sprint proti radaru (7. ročník)
-URL:http%3A%2F%2Fsprintprotiradaru.cz%2F
+DTSTAMP:20210118T152944Z
+UID:20210118T152944Z-1320388332@marudot.com
+DTSTART;TZID=Europe/Berlin:20210704T110000
+DTEND;TZID=Europe/Berlin:20210704T150000
+SUMMARY:Sprint proti radaru (8. ročník)
+URL:http://sprintprotiradaru.cz/
 DESCRIPTION:Krátký sprint proti silničnímu radaru na počátku obce. Náběh cca 40 až 80 m. Hodnotí se okamžitá rychlost zobrazená na radaru.\n\nVíce informací na webových stránkách: \nhttp://sprintprotiradaru.cz/letos.html
 LOCATION:50°33'22"N 15°08'34"E
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Sprint proti radaru (7. ročník)
-TRIGGER:-P1W
-END:VALARM
 END:VEVENT
 END:VCALENDAR
