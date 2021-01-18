@@ -26,9 +26,11 @@
 			gal = gal + '<div class="galleryBox">';
 			gal = gal + '<div id="myLightbox" class="lightbox">';
 			//Control buttons
-			gal = gal + '<span class="close cursor" title="Zavřít" onclick="closeLightbox()">&times;</span>'; //Close
-			gal = gal + '<span class="hideMinis" title="Skrýt miniatury" onclick="changeMinisDispState()">&#9780;</span>'; //Hide/show miniatures
-			gal = gal + '<span class="downloadImageIcon"><a id="imgDownload" style="text-decoration:none" onmouseover="downloadPicturePath()" href="foto/' + year + '/' + year + '_1.jpg" download="SprintProtiRadaru' + year + '_foto1.jpg" title="Stáhnout tuto fotografii">&#128229;</a></span>'; //Download image
+			gal = gal + '<span class="rightControlButtons">'
+			gal = gal + '<div class="close cursor" title="Zavřít" onclick="closeLightbox()"></div>'; //Close
+			gal = gal + '<div class="hideMinis" title="Skrýt miniatury" onclick="changeMinisDispState()"></div>'; //Hide/show miniatures
+			gal = gal + '<div><a id="imgDownload" class="downloadImageIcon" onmouseover="downloadPicturePath()" href="foto/' + year + '/' + year + '_1.jpg" download="SprintProtiRadaru' + year + '_foto1.jpg" title="Stáhnout tuto fotografii"></a></div>'; //Download image
+			gal = gal + '</span>'
 			gal = gal + '<div id="lbContent" class="lightboxContent">';
 
 			//Main Images

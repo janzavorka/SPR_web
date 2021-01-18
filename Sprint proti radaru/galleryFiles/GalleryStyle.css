@@ -45,30 +45,76 @@ img.thumbnail {
 
 
 /* Control buttons */
+.rightControlButtons{
+	z-index:3;
+	position: fixed;
+	right: 15px;
+	top: 20px;
+	text-align: left;
+	max-height: 30vmin;
+}
+
 .close,
 .hideMinis,
 .downloadImageIcon {
-	z-index:3;
 	color: white;
-	position: absolute;
-	top: 10px;
-	right: 25px;
-	font-size: 3.5rem;
+	width: 3.5vmax;
+	/*position: fixed;
+	top: 0px;
+	right: 0px;*/
+	text-align: left;
+	margin-bottom:1.2vmax;
+	/*font-size: 3.5rem;*/
 	font-weight: bold;
+	/*margin-left:auto;
+	margin-right:0;*/
+}
+
+.close{
+	/*width: 3vh;*/
+	height: 0;
+  padding-bottom: 100%; /* Poměr stran 1:1 */
+	display: block;
+	background-repeat: no-repeat;
+  background-size: contain;
+	background-image: url("../img/cross_icon.svg");
+	/*stroke-width: 500px;*/
+	filter: invert(98%) sepia(74%) saturate(4586%) hue-rotate(3deg) brightness(101%) contrast(100%);
 }
 
 .hideMinis {
-	top: 75px;
-	font-size: 3.0rem;
-	text-decoration: none;
-	font-weight: normal;
+	/*top: 75px;*/
+	height: 0;
+  padding-bottom: 100%; /* Poměr stran 1:1 */
+	display: block;
+	background-repeat: no-repeat;
+  background-size: contain;
+	background-image: url("../img/hideMinis_icon.svg");
+	/*stroke-width: 500px;*/
+	filter: invert(98%) sepia(74%) saturate(4586%) hue-rotate(3deg) brightness(101%) contrast(100%);
 }
 
 .downloadImageIcon{
 	text-decoration: none;
-	top:135px;
-	font-size: 2.6rem;
-	font-weight: normal;
+
+	/*top:135px;*/
+	/*display: inline-block;*/
+
+	/*height: 100px;*/
+  /*height: 3.5rem;*/
+
+	width: 110%;
+	height: 0;
+  padding-bottom: 100%; /* Poměr stran 1:1 */
+	/*font-size: 2.6rem;*/
+	font-weight: bold;
+
+	display: block;
+	background-repeat: no-repeat;
+  background-size: contain;
+	background-image: url("../img/downloadBox_icon.svg");
+	/*stroke-width: 500px;*/
+	filter: invert(98%) sepia(74%) saturate(4586%) hue-rotate(3deg) brightness(101%) contrast(100%);
 }
 
 .downloadImageIcon:link,
@@ -83,9 +129,11 @@ img.thumbnail {
 .downloadImageIcon:hover,
 .downloadImageIcon:focus {
 	color: #999;
+	filter: invert(47%) sepia(57%) saturate(6241%) hue-rotate(57deg) brightness(106%) contrast(102%);
 	text-decoration: none;
 	cursor: pointer;
 }
+
 
 .lightboxContent {
 	position: relative;
