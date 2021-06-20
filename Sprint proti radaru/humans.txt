@@ -1,13 +1,13 @@
 /* TEAM */
 Name: Jan Zavorka
 E-mail: janzavorka [at] seznam.cz
-From: Chzech Republic
+From: Czech Republic
 
 Name: Martin Placek
-From: Chzech Republic
+From: Czech Republic
 
 Name: Kamil Zavorka
-From: Chzech Republic
+From: Czech Republic
 
 /* SITE */
 Last update: 2018/12/27
