@@ -77,7 +77,7 @@ function getURLParameterNumber(parameter) {
 
 
 /* >>>>>  Function to test if mobile device is used <<<<< */
-/* 
+/*
 */
 function isMobileDevice(){
   if('ontouchstart' in window || window.orientation > -1){
@@ -86,6 +86,29 @@ function isMobileDevice(){
   else{
     return false;
   }
+}
+
+/*-----------------------------------------------------*/
+
+
+/* >>>>>  Function to load script in javascript file <<<<< */
+/*
+*/
+function loadScript(url, callback)
+{
+    // Adding the script tag to the head as suggested before
+    var head = document.head;
+    var script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.src = url;
+
+    // Then bind the event to the callback function.
+    // There are several events for cross browser compatibility.
+    script.onreadystatechange = callback;
+    script.onload = callback;
+
+    // Fire the loading
+    head.appendChild(script);
 }
 
 /*-----------------------------------------------------*/
