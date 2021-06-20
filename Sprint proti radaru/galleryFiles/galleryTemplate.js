@@ -45,8 +45,8 @@
 			//Image change
 			gal = gal + '<a class="prev"  onclick="plusSlides(-1)">&#10094;</a>';
 			gal = gal + '<a class="next"  onclick="plusSlides(1)">&#10095;</a>';
-			gal = gal + '<a class="nextBox"  onclick="plusSlides(1)"></a>';
-			gal = gal + '<a class="prevBox"  onclick="plusSlides(-1)"></a>';
+			//gal = gal + '<a class="nextBox"  onclick="plusSlides(1)"></a>';
+			//gal = gal + '<a class="prevBox"  onclick="plusSlides(-1)"></a>';
 
 			//Caption
 			gal = gal + '<div class="caption-container">';

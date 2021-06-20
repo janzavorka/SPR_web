@@ -97,8 +97,21 @@ function checkSlideIndex(n){
 /* >>>>>  Open lightbox <<<<< */
 function openLightbox() {
   document.getElementById('myLightbox').style.display = "block";
+	//Update history (better back button)
 	history.pushState(null, document.title, location.href);
 	window.addEventListener('popstate', backButtonGallery);
+	//Add event listeners for navigation
+	document.addEventListener('keydown', keyShortcuts);
+	var mainImages = document.getElementsByClassName('mySlides');
+	Array.from(mainImages).forEach(function(mainImages) {
+      mainImages.addEventListener('swiped-left', nextSlide);
+			mainImages.addEventListener('swiped-right', prevSlide);
+    });
+
+	var rowMinis = document.getElementById('rowOfMiniatures');
+	rowMinis.addEventListener('swiped-left', nextMiniatureRow);
+	rowMinis.addEventListener('swiped-right', prevMiniatureRow);
+
 }
 /*-----------------------------------------------------*/
 
@@ -106,6 +119,18 @@ function openLightbox() {
 function closeLightbox() {
   document.getElementById('myLightbox').style.display = "none";
 	deleteURLParameter('photo');
+	//Remove navigation event listeners
+	document.removeEventListener('keydown', keyShortcuts);
+
+	var mainImages = document.getElementsByClassName('mySlides');
+	Array.from(mainImages).forEach(function(mainImages) {
+      mainImages.removeEventListener('swiped-left', nextSlide);
+			mainImages.removeEventListener('swiped-right', prevSlide);
+    });
+
+	var rowMinis = document.getElementById('rowOfMiniatures');
+	rowMinis.removeEventListener('swiped-left', nextMiniatureRow);
+	rowMinis.removeEventListener('swiped-right', prevMiniatureRow);
 }
 /*-----------------------------------------------------*/
 
@@ -113,11 +138,25 @@ function closeLightbox() {
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
+//Callback in eventListeners
+function nextSlide(){
+	plusSlides(1);
+}
+function prevSlide(){
+	plusSlides(-1);
+}
 /*-----------------------------------------------------*/
 
 /* >>>>>  Row with miniatures change <<<<< */
 function plusMiniatureRow(n) {
 	changeMiniatureRow(rowMiniIndex += n);
+}
+//Callback in eventListeners
+function nextMiniatureRow(){
+	plusMiniatureRow(1);
+}
+function prevMiniatureRow(){
+	plusMiniatureRow(-1);
 }
 /*-----------------------------------------------------*/
 
@@ -218,7 +257,7 @@ function elemPositioning(){
 	document.getElementsByClassName("numbertext")[slideIndex-1].style.left = (mainMaxWidth-mainWidth)/2 + "px";
 
 	// Positioning box for changing main image
-	var boxPrev = document.getElementsByClassName("prevBox")[0];
+	/*var boxPrev = document.getElementsByClassName("prevBox")[0];
 	var boxNext = document.getElementsByClassName("nextBox")[0];
 
 	if(miniaturesDisplayed){
@@ -235,7 +274,7 @@ function elemPositioning(){
 	boxPrev.style.left = (mainMaxWidth-mainWidth)/2 + "px";
 	boxNext.style.right = (mainMaxWidth-mainWidth)/2 + "px";
 	boxPrev.style.height = mainHeight + "px";
-	boxNext.style.height = mainHeight + "px";
+	boxNext.style.height = mainHeight + "px";*/
 
 	//Positioning buttons for cahnging miniatures
 	var minisHeight = document.getElementsByClassName("miniature")[slideIndex-1].offsetHeight;
