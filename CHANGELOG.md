@@ -1,6 +1,7 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+<<<<<<< HEAD
 ### 20.06.2021
 > Jan Závorka
 
@@ -12,6 +13,8 @@ All notable changes to this project will be documented in this file.
 ------------------------------------------------------------------
 
 
+=======
+>>>>>>> c50161d0031dea47edecb463a711de744c4678a8
 ### 11.07.2020
 > Jan Závorka
 
@@ -27,7 +30,11 @@ All notable changes to this project will be documented in this file.
   - Úprava funkce tlačítka zpět prohlížeče v galerii - reakce na stisk tlačítka zpět:
     - Při zobrazení seznamu náhledů (thumbnails) dojde k přesunu na předchozí adresu (většinou seznam ročníků)
     - Při zobrazení velké fotografie (lightbox) dojde po stisku tlačítka zpět k přesunu k náhledům (thumbnails) - řešeno přidáním záznamu do historie prohlížeče. Při prohlížení většího počtu fotek (posouváním, výběr z dolní lišty miniatur dojde vždy po stisku tlačítka zpět k návratu na náhledy (thumbnails)).
+<<<<<<< HEAD
     - Ve funkci _openLightbox()_ přidáno:
+=======
+    - Ve funkci _openLightbox()_ přidáno: 
+>>>>>>> c50161d0031dea47edecb463a711de744c4678a8
     ```javascript
     //Přidá záznam do historie prohlížeče
     history.pushState(null, document.title, location.href);
