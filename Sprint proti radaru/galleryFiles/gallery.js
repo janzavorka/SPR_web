@@ -97,7 +97,6 @@ function checkSlideIndex(n){
 /* >>>>>  Open lightbox <<<<< */
 function openLightbox() {
   document.getElementById('myLightbox').style.display = "block";
-<<<<<<< HEAD
 	//Update history (better back button)
 	history.pushState(null, document.title, location.href);
 	window.addEventListener('popstate', backButtonGallery);
@@ -112,11 +111,6 @@ function openLightbox() {
 	var rowMinis = document.getElementById('rowOfMiniatures');
 	rowMinis.addEventListener('swiped-left', nextMiniatureRow);
 	rowMinis.addEventListener('swiped-right', prevMiniatureRow);
-
-=======
-	history.pushState(null, document.title, location.href);
-	window.addEventListener('popstate', backButtonGallery);
->>>>>>> c50161d0031dea47edecb463a711de744c4678a8
 }
 /*-----------------------------------------------------*/
 
@@ -124,7 +118,6 @@ function openLightbox() {
 function closeLightbox() {
   document.getElementById('myLightbox').style.display = "none";
 	deleteURLParameter('photo');
-<<<<<<< HEAD
 	//Remove navigation event listeners
 	document.removeEventListener('keydown', keyShortcuts);
 
@@ -137,8 +130,6 @@ function closeLightbox() {
 	var rowMinis = document.getElementById('rowOfMiniatures');
 	rowMinis.removeEventListener('swiped-left', nextMiniatureRow);
 	rowMinis.removeEventListener('swiped-right', prevMiniatureRow);
-=======
->>>>>>> c50161d0031dea47edecb463a711de744c4678a8
 }
 /*-----------------------------------------------------*/
 
@@ -319,17 +310,11 @@ function elemPositioning(){
 	}*/
 	if(minisNumber < 6){
 		minisNumber = 6;
-<<<<<<< HEAD
 	}
+	
 	for(var i = 0; i < minCols.length; i++){ //Size of class column which is holding miniature
 		minCols[i].style.width = (spaceForMinis / minisNumber + "%");
 	}
-=======
-	}
-	for(var i = 0; i < minCols.length; i++){ //Size of class column which is holding miniature
-		minCols[i].style.width = (spaceForMinis / minisNumber + "%");
-	}
->>>>>>> c50161d0031dea47edecb463a711de744c4678a8
 	miniaturesInRow = minisNumber;
 	miniatureByPhoto (slideIndex); //Check if are displayed miniature according to main image
 }

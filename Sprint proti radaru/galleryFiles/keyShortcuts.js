@@ -25,7 +25,3 @@ function keyShortcuts(e) {
 			break;
 	}
 }
-
-var swipeScriptLoaded = function() {
-   // Here, do whatever you want
-};
