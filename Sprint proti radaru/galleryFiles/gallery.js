@@ -102,11 +102,15 @@ function openLightbox() {
 	window.addEventListener('popstate', backButtonGallery);
 	//Add event listeners for navigation
 	document.addEventListener('keydown', keyShortcuts);
-	var mainImages = document.getElementsByClassName('mySlides');
+	/*var mainImages = document.getElementsByClassName('mySlides');
 	Array.from(mainImages).forEach(function(mainImages) {
       mainImages.addEventListener('swiped-left', nextSlide);
 			mainImages.addEventListener('swiped-right', prevSlide);
-    });
+    });*/
+
+	var mapNavig = document.getElementById("imageNavigation");
+	mapNavig.addEventListener('swiped-left', nextSlide);
+	mapNavig.addEventListener('swiped-right', prevSlide);
 
 	var rowMinis = document.getElementById('rowOfMiniatures');
 	rowMinis.addEventListener('swiped-left', nextMiniatureRow);
@@ -121,11 +125,15 @@ function closeLightbox() {
 	//Remove navigation event listeners
 	document.removeEventListener('keydown', keyShortcuts);
 
-	var mainImages = document.getElementsByClassName('mySlides');
+	/*var mainImages = document.getElementsByClassName('mySlides');
 	Array.from(mainImages).forEach(function(mainImages) {
       mainImages.removeEventListener('swiped-left', nextSlide);
 			mainImages.removeEventListener('swiped-right', prevSlide);
-    });
+    });*/
+
+	var mapNavig = document.getElementById("imageNavigation");
+	mapNavig.removeEventListener('swiped-left', nextSlide);
+	mapNavig.removeEventListener('swiped-right', prevSlide);
 
 	var rowMinis = document.getElementById('rowOfMiniatures');
 	rowMinis.removeEventListener('swiped-left', nextMiniatureRow);
@@ -255,7 +263,13 @@ function elemPositioning(){
 	// Positioning main image number
 	document.getElementsByClassName("numbertext")[slideIndex-1].style.left = (mainMaxWidth-mainWidth)/2 + "px";
 
-	// Positioning box for changing main image
+	// Image map for main image navigation recalculation
+	var naviMap = document.getElementById("imageNavigation");
+	var naviMapRectPrev = document.getElementById("imageNavigationPrev");
+	var naviMapRectNext = document.getElementById("imageNavigationNext");
+
+	naviMapRectPrev.coords = "0,0,"+Math.floor(mainWidth/2)+","+mainHeight;
+	naviMapRectNext.coords = (Math.floor(mainWidth/2)+1)+",0,"+mainWidth+","+mainHeight;
 	/*var boxPrev = document.getElementsByClassName("prevBox")[0];
 	var boxNext = document.getElementsByClassName("nextBox")[0];
 
@@ -311,7 +325,7 @@ function elemPositioning(){
 	if(minisNumber < 6){
 		minisNumber = 6;
 	}
-	
+
 	for(var i = 0; i < minCols.length; i++){ //Size of class column which is holding miniature
 		minCols[i].style.width = (spaceForMinis / minisNumber + "%");
 	}

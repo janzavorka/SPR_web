@@ -1,7 +1,26 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
-<<<<<<< HEAD
+### 01.07.2021
+> Jan Závorka
+
+
+- Posouvání hlavní fotografie pomocí kliku řešeno pomocí image map (původně bylo řešeno průhlednými obdélníky)
+  - vlastnosti image map se při změně fotografie/velikosti okna přepočítavají
+
+------------------------------------------------------------------
+
+### 27.06.2021
+> Jan Závorka
+
+- Úprava konceptu stránky s fotografií:
+  - Nyní je galerie jeden soubor a výběr zobrazovaného roku se provádí pomocí url parametru ***year***
+  - Data o daném ročníku (číslo ročníku a počet fotografií) jsou uloženy v JSON souboru ve složce ***foto***
+  - Pokud není uveden url parametr pro rok, načte se poslední ročník (poslední ve smyslu poslední v JSON souboru)
+  - Pokud není načten JSON soubor nebo má nesprávný formát, zobrazí se chyba o špatném načtení galerie a žádné fotografie nejsou zobrazeny
+
+------------------------------------------------------------------
+
 ### 20.06.2021
 > Jan Závorka
 
@@ -12,9 +31,6 @@ All notable changes to this project will be documented in this file.
 
 ------------------------------------------------------------------
 
-
-=======
->>>>>>> c50161d0031dea47edecb463a711de744c4678a8
 ### 11.07.2020
 > Jan Závorka
 
@@ -30,11 +46,7 @@ All notable changes to this project will be documented in this file.
   - Úprava funkce tlačítka zpět prohlížeče v galerii - reakce na stisk tlačítka zpět:
     - Při zobrazení seznamu náhledů (thumbnails) dojde k přesunu na předchozí adresu (většinou seznam ročníků)
     - Při zobrazení velké fotografie (lightbox) dojde po stisku tlačítka zpět k přesunu k náhledům (thumbnails) - řešeno přidáním záznamu do historie prohlížeče. Při prohlížení většího počtu fotek (posouváním, výběr z dolní lišty miniatur dojde vždy po stisku tlačítka zpět k návratu na náhledy (thumbnails)).
-<<<<<<< HEAD
     - Ve funkci _openLightbox()_ přidáno:
-=======
-    - Ve funkci _openLightbox()_ přidáno: 
->>>>>>> c50161d0031dea47edecb463a711de744c4678a8
     ```javascript
     //Přidá záznam do historie prohlížeče
     history.pushState(null, document.title, location.href);
