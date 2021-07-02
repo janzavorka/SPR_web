@@ -264,30 +264,8 @@ function elemPositioning(){
 	document.getElementsByClassName("numbertext")[slideIndex-1].style.left = (mainMaxWidth-mainWidth)/2 + "px";
 
 	// Image map for main image navigation recalculation
-	var naviMap = document.getElementById("imageNavigation");
-	var naviMapRectPrev = document.getElementById("imageNavigationPrev");
-	var naviMapRectNext = document.getElementById("imageNavigationNext");
-
-	naviMapRectPrev.coords = "0,0,"+Math.floor(mainWidth/2)+","+mainHeight;
-	naviMapRectNext.coords = (Math.floor(mainWidth/2)+1)+",0,"+mainWidth+","+mainHeight;
-	/*var boxPrev = document.getElementsByClassName("prevBox")[0];
-	var boxNext = document.getElementsByClassName("nextBox")[0];
-
-	if(miniaturesDisplayed){
-		boxPrev.style.cssText = "max-height:75vh";
-		boxNext.style.cssText = "max-height: 75vh";
-	}
-	else {
-		boxPrev.style.cssText = "max-height: 89vh";
-		boxNext.style.cssText = "max-height: 89vh";
-	}
-	//Changing dimensions of the boxes according to dimensions of main image
-	boxPrev.style.width = mainWidth/2 + "px";
-	boxNext.style.width = mainWidth/2 + "px";
-	boxPrev.style.left = (mainMaxWidth-mainWidth)/2 + "px";
-	boxNext.style.right = (mainMaxWidth-mainWidth)/2 + "px";
-	boxPrev.style.height = mainHeight + "px";
-	boxNext.style.height = mainHeight + "px";*/
+ 	document.getElementById("imageNavigationPrev").coords = "0,0,"+Math.floor(mainWidth/2)+","+mainHeight;
+ 	document.getElementById("imageNavigationNext").coords = (Math.floor(mainWidth/2)+1)+",0,"+mainWidth+","+mainHeight;
 
 	//Positioning buttons for cahnging miniatures
 	var minisHeight = document.getElementsByClassName("miniature")[slideIndex-1].offsetHeight;
