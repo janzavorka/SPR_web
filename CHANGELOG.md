@@ -1,6 +1,18 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+### 03.07.2021
+> Jan Závorka
+
+
+- Úprava .htaccess souboru:
+	- přesměrování původních odkazů na gelirie ročníků na novou jednostránkovou galerii (foto_XXXX.html)
+	- příklady:
+		- sprintprotiradaru.cz/foto_2015.html přesměrováno na sprintprotiradaru.cz/fotogalerie.html?year=2015
+		- sprintprotiradaru.cz/foto_2015.html?photo=5 přesměrováno na sprintprotiradaru.cz/fotogalerie.html?year=2015&photo=5
+
+------------------------------------------------------------------
+
 ### 01.07.2021
 > Jan Závorka
 
