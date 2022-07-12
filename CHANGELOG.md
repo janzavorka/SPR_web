@@ -1,6 +1,24 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+### 03.07.2022
+> Jan Závorka
+
+- Úprava souborů pro konec aktuálního ročníku (2022)
+	- Přejmenování souboru s informacemi pro letošní ročníku
+	- Příprava rozcestí pro fotogalerie
+	- Úprava stránky index.html
+	- Upload fotek, úprava daného JSON souboru
+	- Upload .pdf s výsledky a úprava příslušného .html souboru
+------------------------------------------------------------------
+
+### 30.05.2022
+> Jan Závorka
+
+- Upload letáku, plakátu a .ics souboru pro devátý ročník (2022)
+- Úprava stránek s uploadem informací k aktuálnímu ročníku
+------------------------------------------------------------------
+
 ### 04.07.2021
 > Jan Závorka
 
