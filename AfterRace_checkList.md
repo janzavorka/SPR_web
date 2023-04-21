@@ -6,7 +6,7 @@
 - [ ] Rename info files - update dates, files: ***letos.html***, ***letos_FULLinfo.html***, ***letos_nahrada.html***
 - [ ] Add link to ***galerie.html***, add data to ***foto/galleryValues.json***
 - [ ] Upload images, folders ***year*** and ***year_m***
-- [ ] Add ***pictureComments/2021.html*** 
+- [ ] Add ***pictureComments/2021.html***
 
 ### Image parameters
 - Main images:

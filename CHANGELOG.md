@@ -1,6 +1,15 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+### 21.04.2023
+> Jan Závorka
+
+- Úprava souborů pro 10. ročník konaný 2.7.2023
+	- Úprava stránky index
+	- Úprava stránek letos (a příslušné přejmenování)
+- Nahrání příslušných souborů (leták, plakát, .ics)
+------------------------------------------------------------------
+
 ### 03.07.2022
 > Jan Závorka
 
