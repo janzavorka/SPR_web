@@ -29,6 +29,15 @@ function validateForm(){
   if(antibot!=""){
     formOK = false;
   }
+  // Antibot captcha testing
+  var captcha_response = grecaptcha.getResponse();
+  if (captcha_response.length == 0){
+    formOK = false;
+    textErr.innerText = "Captcha error"
+  }
+  else{
+    // textErr.innerText = "Captcha OK"
+  }
   return formOK;
 }
 /*-----------------------------------------------------*/
