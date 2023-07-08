@@ -1,6 +1,18 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+### 02.07.2023
+> Jan Závorka
+
+- Úprva kontaktního formuláře - přidání captcha
+- Úprava souborů pro konec aktuálního ročníku (2023)
+	- Přejmenování souboru s informacemi pro letošní ročníku
+	- Příprava rozcestí pro fotogalerie
+	- Úprava stránky index.html
+	- Upload fotek, úprava daného JSON souboru
+	- Upload .pdf s výsledky a úprava příslušného .html souboru
+------------------------------------------------------------------
+
 ### 21.04.2023
 > Jan Závorka
 
