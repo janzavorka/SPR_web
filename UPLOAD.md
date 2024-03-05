@@ -1,5 +1,5 @@
 # Upload
-Information about uploaded version to web server.
+Information about uploaded version to web server. NOT UPDATED
 ##### 12.07.2020 23:00 JZ: 'sprint proti radaru' -> webserver subdoména novy (průběžné testování vylepšení galerie)
 ##### 11.07.2020 16:00 JZ: 'sprint proti radaru' -> webserver subdoména novy (testování vylepšení galerie)
 ##### 05.07.2020 17:00 JZ: 'sprint proti radaru' -> webserver hlavní doména 'www' (přidání dat/fotek z aktuálního 7. ročník)

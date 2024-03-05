@@ -1,6 +1,16 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+
+### 05.03.2024
+> Jan Závorka
+
+- Příprava dat pro plné informace k 11. ročníku 2024
+- Přidán správný soubor letos.html
+- Přidány aktualizováná data do menu Ke stažení 
+- Updatována hlavní stránka index.html
+------------------------------------------------------------------
+
 ### 02.07.2023
 > Jan Závorka
 

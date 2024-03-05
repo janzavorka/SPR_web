@@ -4,8 +4,8 @@ PRODID:-//ical.marudot.com//iCal Event Maker
 CALSCALE:GREGORIAN
 BEGIN:VTIMEZONE
 TZID:Europe/Berlin
-LAST-MODIFIED:20201011T015911Z
-TZURL:http://tzurl.org/zoneinfo-outlook/Europe/Berlin
+LAST-MODIFIED:20231222T233358Z
+TZURL:https://www.tzurl.org/zoneinfo-outlook/Europe/Berlin
 X-LIC-LOCATION:Europe/Berlin
 BEGIN:DAYLIGHT
 TZNAME:CEST
@@ -23,17 +23,17 @@ RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-DTSTAMP:20230421T153129Z
+DTSTAMP:20240305T203121Z
 UID:20210118T152944Z-1320388332@marudot.com
-DTSTART;TZID=Europe/Berlin:20230702T110000
-DTEND;TZID=Europe/Berlin:20230702T150000
-SUMMARY:Sprint proti radaru (10. ročník)
+DTSTART;TZID=Europe/Berlin:20240630T110000
+DTEND;TZID=Europe/Berlin:20240630T150000
+SUMMARY:Sprint proti radaru (11. ročník)
 URL:http://sprintprotiradaru.cz/
 DESCRIPTION:Krátký sprint proti silničnímu radaru na počátku obce. Náběh cca 40 až 80 m. Hodnotí se okamžitá rychlost zobrazená na radaru.\n\nVíce informací na webových stránkách: \nhttp://sprintprotiradaru.cz/letos.html
 LOCATION:50°33'22"N 15°08'34"E
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Sprint proti radaru (10. ročník)
+DESCRIPTION:Sprint proti radaru (11. ročník)
 TRIGGER:-P1W
 END:VALARM
 END:VEVENT
