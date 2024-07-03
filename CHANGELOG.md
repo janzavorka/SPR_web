@@ -2,12 +2,26 @@
 All notable changes to this project will be documented in this file.
 
 
+
+
+### 03.07.2024
+> Jan Závorka
+
+- Úpravy po konci aktuálního ročníku
+	- Upload fotek
+	- Úprava souborů galerie
+	- Update rekordu na hlavní stránce (index.html)
+	- Upload výsledků
+	- Změna obsahu stránky letošní ročník (přejmenování souborů)
+	- Zakomentování obsahu ke stažení týkajícího se tohoto ročníku 
+------------------------------------------------------------------
+
 ### 05.03.2024
 > Jan Závorka
 
 - Příprava dat pro plné informace k 11. ročníku 2024
 - Přidán správný soubor letos.html
-- Přidány aktualizováná data do menu Ke stažení 
+- Přidány aktualizováná data do menu Ke stažení
 - Updatována hlavní stránka index.html
 ------------------------------------------------------------------
 
