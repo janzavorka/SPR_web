@@ -2,7 +2,14 @@
 All notable changes to this project will be documented in this file.
 
 
+### 30.03.2025
+> Jan Závorka
 
+- Příprava dat pro plné informace k 12. ročníku 2025
+- Přidán správný soubor letos.html
+- Přidány aktualizováná data do menu Ke stažení
+- Updatována hlavní stránka index.html
+------------------------------------------------------------------
 
 ### 03.07.2024
 > Jan Závorka
@@ -13,7 +20,7 @@ All notable changes to this project will be documented in this file.
 	- Update rekordu na hlavní stránce (index.html)
 	- Upload výsledků
 	- Změna obsahu stránky letošní ročník (přejmenování souborů)
-	- Zakomentování obsahu ke stažení týkajícího se tohoto ročníku 
+	- Zakomentování obsahu ke stažení týkajícího se tohoto ročníku
 ------------------------------------------------------------------
 
 ### 05.03.2024
