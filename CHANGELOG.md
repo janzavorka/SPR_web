@@ -1,6 +1,17 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+### 29.06.2025
+> Jan Závorka
+
+- Úpravy po konci aktuálního ročníku
+	- Upload fotek
+	- Úprava souborů galerie
+	- Update rekordu na hlavní stránce (index.html)
+	- Upload výsledků
+	- Změna obsahu stránky letošní ročník (přejmenování souborů)
+	- Zakomentování obsahu ke stažení týkajícího se tohoto ročníku
+------------------------------------------------------------------
 
 ### 30.03.2025
 > Jan Závorka
