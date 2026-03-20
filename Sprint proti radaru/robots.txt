@@ -10,6 +10,11 @@ Allow: /foto/2019/
 Allow: /foto/2020/
 Allow: /foto/2021/
 Allow: /foto/2022/
+Allow: /foto/2023/
+Allow: /foto/2024/
+Allow: /foto/2025/
+Allow: /foto/2026/
+
 
 # Ještě speciálně pro google
 User-agent: Googlebot
@@ -24,6 +29,10 @@ Allow: /foto/2019/
 Allow: /foto/2020/
 Allow: /foto/2021/
 Allow: /foto/2022/
+Allow: /foto/2023/
+Allow: /foto/2024/
+Allow: /foto/2025/
+Allow: /foto/2026/
 
 
 User-agent: Googlebot-Image
@@ -43,3 +52,7 @@ Allow: /foto/2019/
 Allow: /foto/2020/
 Allow: /foto/2021/
 Allow: /foto/2022/
+Allow: /foto/2023/
+Allow: /foto/2024/
+Allow: /foto/2025/
+Allow: /foto/2026/

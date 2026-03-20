@@ -1,6 +1,5 @@
 BEGIN:VCALENDAR
 VERSION:2.0
-PRODID:-//ical.marudot.com//iCal Event Maker
 CALSCALE:GREGORIAN
 BEGIN:VTIMEZONE
 TZID:Europe/Berlin
@@ -25,15 +24,15 @@ END:VTIMEZONE
 BEGIN:VEVENT
 DTSTAMP:20250330T193740Z
 UID:20210118T152944Z-1320388332@marudot.com
-DTSTART;TZID=Europe/Berlin:20250629T110000
-DTEND;TZID=Europe/Berlin:20250629T150000
-SUMMARY:Sprint proti radaru (12. ročník)
+DTSTART;TZID=Europe/Berlin:20260705T110000
+DTEND;TZID=Europe/Berlin:20260705T150000
+SUMMARY:Sprint proti radaru (13. ročník)
 URL:http://sprintprotiradaru.cz/
 DESCRIPTION:Krátký sprint proti silničnímu radaru na počátku obce. Náběh cca 40 až 80 m. Hodnotí se okamžitá rychlost zobrazená na radaru.\n\nVíce informací na webových stránkách: \nhttp://sprintprotiradaru.cz/letos.html
 LOCATION:50°33'22"N 15°08'34"E
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Sprint proti radaru (12. ročník)
+DESCRIPTION:Sprint proti radaru (13. ročník)
 TRIGGER:-P1W
 END:VALARM
 END:VEVENT
